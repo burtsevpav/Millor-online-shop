@@ -1,0 +1,116 @@
+.page {
+}
+// Блок Hero
+.hero {
+  @include adaptiveValue("padding-top", 120, 50, 1660, 992, 1);
+  @include adaptiveValue("padding-bottom", 120, 10, 1660, 992, 1);
+  // .hero__slider
+  &__slider {
+  }
+  // .hero__wrapper
+  &__wrapper {
+    @include adaptiveValue("padding-bottom", 80, 10, 1660, 992, 1);
+  }
+  // .hero__slide
+  &__slide {
+  }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.item-hero {
+  display: flex;
+  column-gap: rem(30);
+  @media (max-width: em(600)) {
+    display: flex;
+    flex-direction: column;
+  }
+  // .item-hero__body
+  &__body {
+    flex: 1 1 57.831%;
+    @include adaptiveValue("padding-top", 50, 0, 1660, 600, 1);
+    @include adaptiveValue("padding-bottom", 50, 30, 1660, 600, 1);
+  }
+  // .item-hero__title
+  &__title {
+    font-weight: 900;
+    @include adaptiveValue("font-size", 80, 40, 1660, 992, 1);
+    line-height: math.div(100, 80);
+    @include adaptiveValue("max-width", 600, 200, 1500, 768, 1);
+    color: #000000;
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 60, 20, 1660, 992, 1);
+    }
+    @media (max-width: $tablet) {
+      @include adaptiveValue("font-size", 40, 30, 992, 600, 1);
+    }
+  }
+  // .item-hero__text
+  &__text {
+    @include adaptiveValue("font-size", 25, 18, 1660, 992, 1);
+    font-weight: 500;
+    line-height: 130%;
+    @include adaptiveValue("max-width", 650, 300, 1500, 768, 1);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 48, 20, 1660, 992, 1);
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+  // .item-hero__button
+  &__button {
+    @include adaptiveValue("font-size", 25, 18, 1660, 992, 1);
+    text-align: center;
+  }
+  // .item-hero__picture
+  &__picture {
+    flex: 1 1 42.169%;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 120%;
+      height: 120%;
+      background: url("@img/main/hero/grain.png") 0 0 / 100% no-repeat;
+      transform: translate(-30%, -3%);
+      @media (max-width: em(1500)) {
+        transform: translate(-15%, -3%);
+      }
+    }
+    @media (max-width: em(600)) {
+      padding-bottom: 100%;
+      &::before {
+        width: 100%;
+        height: 100%;
+        transform: translate(0, 0);
+      }
+    }
+  }
+
+  // .item-hero__ibg-image
+  &__ibg-image {
+    position: absolute;
+    width: 100%;
+    // height: 100%;
+    top: 0;
+    left: 0;
+    padding-bottom: 79.666%;
+  }
+  // .item-hero__ibg-pic
+  &__ibg-pic {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -20%;
+    @media (max-width: em(1500)) {
+      left: 0%;
+    }
+  }
+}

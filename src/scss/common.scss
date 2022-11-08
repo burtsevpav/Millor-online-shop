@@ -1,1 +1,38 @@
 // Заголовки, общие БЄМ блоки и проче...
+
+// Orange blob background
+.wrapper {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    left: 60%;
+    background: url("@img/main/hero/blob.svg") 0 0 / 100% no-repeat;
+  }
+}
+
+// Pagination for swiper
+.swiper-pagination {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  @include adaptiveValue("gap", 30, 25, 1660, 992, 1);
+  padding-bottom: rem(20);
+}
+.swiper-pagination-bullet {
+  cursor: pointer;
+  @include adaptiveValue("height", 20, 16, 1660, 992, 1);
+  @include adaptiveValue("width", 20, 16, 1660, 992, 1);
+  background-color: #ffffff;
+  border-radius: 50%;
+  @media (min-width: em(2500)) {
+    background-color: #bfa099;
+  }
+}
+.swiper-pagination-bullet-active {
+  background-color: #40241d;
+}
