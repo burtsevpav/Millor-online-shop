@@ -9,9 +9,15 @@
     width: 40%;
     height: 100%;
     top: 0;
-    left: 60%;
+    right: 0;
     background: url("@img/main/hero/blob.svg") 0 0 / 100% no-repeat;
   }
+}
+
+// Общий title
+.title {
+  font-weight: 900;
+  @include adaptiveValue("font-size", 50, 25);
 }
 
 // Pagination for swiper
@@ -30,7 +36,10 @@
   background-color: #ffffff;
   border-radius: 50%;
   @media (min-width: em(2500)) {
-    background-color: #bfa099;
+    background-color: #e4dcda;
+  }
+  @media (max-width: $mobileSmall) {
+    background-color: #e4dcda;
   }
 }
 .swiper-pagination-bullet-active {

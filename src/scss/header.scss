@@ -162,6 +162,9 @@
     font-weight: 500;
     @include adaptiveValue("font-size", 25, 20, 1660, 768, 1);
     line-height: math.div(29, 25);
+    @media (max-width: $mobile) {
+      font-size: rem(27);
+    }
   }
   // .menu__icon
   &__icon {

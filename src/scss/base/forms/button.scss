@@ -2,7 +2,8 @@
 // Снипет (HTML): btn
 
 .button {
-  display: inline-flex;
+  display: block;
+  text-align: center;
   @include adaptiveValue("padding-top", 18, 13, 1660, 768, 1);
   @include adaptiveValue("padding-bottom", 18, 13, 1660, 768, 1);
   @include adaptiveValue("padding-right", 45, 20, 1660, 768, 1);
