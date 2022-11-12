@@ -12,6 +12,16 @@
     right: 0;
     background: url("@img/main/hero/blob.svg") 0 0 / 100% no-repeat;
   }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transform: translate(-265%, 30%);
+    background: url("../img/main/item-cards/blob-two.svg") 0 0 / 100% no-repeat;
+  }
 }
 
 // Общий title
@@ -44,4 +54,23 @@
 }
 .swiper-pagination-bullet-active {
   background-color: #40241d;
+}
+
+.swiper-dotts {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include adaptiveValue("gap", 30, 25, 1660, 992, 1);
+  padding-bottom: rem(20);
+  .swiper-pagination-bullet {
+    cursor: pointer;
+    @include adaptiveValue("height", 20, 16, 1660, 992, 1);
+    @include adaptiveValue("width", 20, 16, 1660, 992, 1);
+    background-color: #fbdd91;
+    border-radius: 50%;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #f9b300;
+  }
 }

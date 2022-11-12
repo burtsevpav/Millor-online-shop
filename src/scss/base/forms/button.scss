@@ -14,6 +14,7 @@
   border-radius: rem(5);
   color: #ffffff;
   transition: all 0.2s ease 0s;
+  @include adaptiveValue("font-size", 25, 18, 1660, 992, 1);
   @media (any-hover: hover) {
     &:hover {
       background: #e2a300;

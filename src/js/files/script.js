@@ -20,6 +20,6 @@ function formHeaderActive(e) {
   } else if (!targetElement.closest(`.user-header__search`)) {
     formHeader.classList.remove("form-header__active");
     headerItem.classList.remove("header__active");
-    e.preventDefault();
+    // e.preventDefault();
   }
 }
