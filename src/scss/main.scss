@@ -683,3 +683,59 @@
     line-height: 130%;
   }
 }
+// Блок 6
+.title-text {
+  @include adaptiveValue("padding-top", 205, 100);
+  @include adaptiveValue("padding-bottom", 190, 100);
+  background: url("../img/main/title-text/decor-two.svg") center bottom / 100% no-repeat,
+    url("../img/main/title-text/bg.jpg") center center / cover no-repeat;
+
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -1%;
+    left: 0;
+    background: url("../img/main/title-text/decor-one.svg") 0 0 / 100% no-repeat;
+  }
+  // .title-text__container
+  &__container {
+  }
+  // .title-text__title
+  &__title {
+    max-width: rem(800);
+    @include adaptiveValue("font-size", 50, 30);
+    line-height: math.div(62, 50);
+    color: #ffffff;
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 100, 30);
+    }
+  }
+
+  // .title-text__item
+  &__item {
+    max-width: rem(1246);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 100, 30);
+    }
+  }
+
+  // .title-text__text
+  &__text {
+    font-weight: 500;
+    @include adaptiveValue("font-size", 25, 20);
+    line-height: 130%;
+    color: #ffffff;
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 45, 25);
+    }
+  }
+  // .title-text__button
+  &__button {
+    position: relative;
+    z-index: 2;
+    display: inline-flex;
+  }
+}
