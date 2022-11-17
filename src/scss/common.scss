@@ -47,9 +47,15 @@
   border-radius: 50%;
   @media (min-width: em(2500)) {
     background-color: #e4dcda;
+    .swiper-pagination-bullet-active {
+      background-color: #40241d;
+    }
   }
   @media (max-width: $mobileSmall) {
     background-color: #e4dcda;
+    .swiper-pagination-bullet-active {
+      background-color: #40241d;
+    }
   }
 }
 .swiper-pagination-bullet-active {

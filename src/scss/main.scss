@@ -124,15 +124,6 @@
   position: relative;
   z-index: 5;
   @include adaptiveValue("padding-bottom", 90, 50);
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 25%;
-  //   height: 100%;
-  //   top: 0;
-  //   left: 0;
-  //   background: url("../img/main/item-cards/blob-two.svg") 0 0 / 100% no-repeat;
-  // }
   // .item-cards__container
   &__container {
   }
@@ -151,11 +142,12 @@
   &__body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: rem(20);
+    @include adaptiveValue("column-gap", 20, 15, 480, 320, 1);
+    @include adaptiveValue("row-gap", 20, 15, 480, 320, 1);
     @media (max-width: em(1160)) {
       grid-template-columns: repeat(2, 1fr);
     }
-    @media (max-width: em(480)) {
+    @media (max-width: $mobileSmall) {
       grid-template-columns: repeat(1, 1fr);
     }
   }
