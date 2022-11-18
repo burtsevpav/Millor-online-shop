@@ -162,8 +162,14 @@
     font-weight: 500;
     @include adaptiveValue("font-size", 25, 20, 1660, 768, 1);
     line-height: math.div(29, 25);
+    padding-bottom: rem(5);
     @media (max-width: $mobile) {
       font-size: rem(27);
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        border-bottom: 2px solid $mainElementColor;
+      }
     }
   }
   // .menu__icon

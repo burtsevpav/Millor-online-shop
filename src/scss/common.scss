@@ -1,5 +1,32 @@
 // Заголовки, общие БЄМ блоки и проче...
 
+// Common styles for header and footer
+
+// Bug fixing of select with small arrow
+.select {
+  // .select__value
+  &__value {
+    padding: 0 rem(15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &::after {
+      width: 15px;
+      height: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      content: "";
+      display: block;
+      transition: all 0.3s ease 0s;
+      background: url("../img/main/columns-slider/arrow-small.svg") 0 0 no-repeat;
+      ._select-open & {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+}
+
 // Orange blob background
 .wrapper {
   position: relative;
@@ -17,9 +44,8 @@
     position: absolute;
     width: 30%;
     height: 100%;
-    top: 0;
-    right: 0;
-    transform: translate(-265%, 30%);
+    top: rem(1050);
+    left: -10%;
     background: url("../img/main/item-cards/blob-two.svg") 0 0 / 100% no-repeat;
   }
 }
@@ -47,19 +73,19 @@
   border-radius: 50%;
   @media (min-width: em(2500)) {
     background-color: #e4dcda;
-    .swiper-pagination-bullet-active {
-      background-color: #40241d;
-    }
   }
   @media (max-width: $mobileSmall) {
     background-color: #e4dcda;
-    .swiper-pagination-bullet-active {
-      background-color: #40241d;
-    }
   }
 }
 .swiper-pagination-bullet-active {
   background-color: #40241d;
+  @media (max-width: $mobileSmall) {
+    background-color: #40241d;
+  }
+  @media (min-width: em(2500)) {
+    background-color: #40241d;
+  }
 }
 
 .swiper-dotts {
