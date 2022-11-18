@@ -678,8 +678,8 @@
 }
 // Блок 6
 .title-text {
-  @include adaptiveValue("padding-top", 205, 100);
-  @include adaptiveValue("padding-bottom", 190, 100);
+  @include adaptiveValue("padding-top", 205, 50);
+  @include adaptiveValue("padding-bottom", 190, 50);
   background: url("../img/main/title-text/decor-two.svg") center bottom / 100% no-repeat,
     url("../img/main/title-text/bg.jpg") center center / cover no-repeat;
 
@@ -699,7 +699,6 @@
   // .title-text__title
   &__title {
     max-width: rem(800);
-    @include adaptiveValue("font-size", 50, 30);
     line-height: math.div(62, 50);
     color: #ffffff;
     &:not(:last-child) {
@@ -718,7 +717,7 @@
   // .title-text__text
   &__text {
     font-weight: 500;
-    @include adaptiveValue("font-size", 25, 20);
+    @include adaptiveValue("font-size", 25, 18);
     line-height: 130%;
     color: #ffffff;
     &:not(:last-child) {
