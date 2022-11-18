@@ -1,3 +1,48 @@
 //====================================================================================================
 
 //====================================================================================================
+.footer {
+  // .footer__container
+  &__container {
+  }
+  // .footer__elements
+  &__elements {
+    @media (max-width: $mobileSmall) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+.menu-footer {
+  text-align: center;
+  // .menu-footer__content
+  &__content {
+  }
+  // .menu-footer__list
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include adaptiveValue("column-gap", 100, 50, 1660, 768, 1);
+    @include adaptiveValue("row-gap", 13, 8, 768, 320, 1);
+    @media (max-width: em(400)) {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+  }
+  // .menu-footer__item
+  &__item {
+  }
+  // .menu-footer__link
+  &__link {
+    font-weight: 500;
+    @include adaptiveValue("font-size", 25, 20, 1660, 1360, 1);
+    line-height: math.div(29, 25);
+    @media (any-hover: hover) {
+      &:hover {
+        border-bottom: 2px solid $mainElementColor;
+      }
+    }
+  }
+}

@@ -4,17 +4,17 @@
 .button {
   display: block;
   text-align: center;
-  @include adaptiveValue("padding-top", 18, 13, 1660, 768, 1);
-  @include adaptiveValue("padding-bottom", 18, 13, 1660, 768, 1);
-  @include adaptiveValue("padding-right", 45, 20, 1660, 768, 1);
-  @include adaptiveValue("padding-left", 45, 20, 1660, 768, 1);
+  @include adaptiveValue("padding-top", 18, 13, 1660, 1360, 1);
+  @include adaptiveValue("padding-bottom", 18, 13, 1660, 1360, 1);
+  @include adaptiveValue("padding-right", 45, 20, 1660, 1360, 1);
+  @include adaptiveValue("padding-left", 45, 20, 1660, 1360, 1);
   font-weight: 700;
   line-height: math.div(36, 30);
   background: #f9b300;
   border-radius: rem(5);
   color: #ffffff;
   transition: all 0.2s ease 0s;
-  @include adaptiveValue("font-size", 25, 18, 1660, 992, 1);
+  @include adaptiveValue("font-size", 25, 18, 1660, 1360, 1);
   @media (any-hover: hover) {
     &:hover {
       background: #e2a300;

@@ -122,7 +122,7 @@
 // Блок 3
 .item-cards {
   position: relative;
-  z-index: 5;
+  z-index: 1;
   @include adaptiveValue("padding-bottom", 90, 50);
   // .item-cards__container
   &__container {
@@ -875,7 +875,7 @@
 }
 // Блок 8
 .subscribe {
-  @include adaptiveValue("padding-bottom", 120, 30);
+  @include adaptiveValue("padding-bottom", 80, 30);
   // .subscribe__container
   &__container {
     display: flex;
@@ -962,13 +962,13 @@
     border-radius: rem(40);
     border: none;
     z-index: 3;
-    @include adaptiveValue("padding-top", 25, 13, 1660, 768, 1);
-    @include adaptiveValue("padding-bottom", 25, 13, 1660, 768, 1);
-    @include adaptiveValue("padding-right", 90, 70, 1660, 768, 1);
-    @include adaptiveValue("padding-left", 60, 20, 1660, 768, 1);
+    @include adaptiveValue("padding-top", 25, 13, 1660, 1360, 1);
+    @include adaptiveValue("padding-bottom", 25, 13, 1660, 1360, 1);
+    @include adaptiveValue("padding-right", 90, 70, 1660, 1360, 1);
+    @include adaptiveValue("padding-left", 60, 20, 1660, 1360, 1);
     &::placeholder {
       color: #c9c9c9;
-      @include adaptiveValue("font-size", 25, 18);
+      @include adaptiveValue("font-size", 25, 18, 1660, 1360, 1);
     }
     @media (max-width: $tablet) {
       @include adaptiveValue("padding-right", 50, 20, 1660, 768, 1);
@@ -986,11 +986,11 @@
     color: #ffffff;
     background: #f9b300;
     border-radius: rem(40);
-    @include adaptiveValue("font-size", 25, 18);
-    @include adaptiveValue("padding-top", 25, 16, 1660, 768, 1);
-    @include adaptiveValue("padding-bottom", 25, 16, 1660, 768, 1);
-    @include adaptiveValue("padding-right", 53, 30, 1660, 768, 1);
-    @include adaptiveValue("padding-left", 53, 30, 1660, 768, 1);
+    @include adaptiveValue("font-size", 25, 18, 1660, 1360, 1);
+    @include adaptiveValue("padding-top", 25, 16, 1660, 1360, 1);
+    @include adaptiveValue("padding-bottom", 25, 16, 1660, 1360, 1);
+    @include adaptiveValue("padding-right", 53, 30, 1660, 1360, 1);
+    @include adaptiveValue("padding-left", 53, 30, 1660, 1360, 1);
     @media (max-width: $tablet) {
       transform: translate(0, 0);
       align-self: flex-start;

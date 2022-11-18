@@ -1,7 +1,52 @@
 // Заголовки, общие БЄМ блоки и проче...
 
 // Common styles for header and footer
-
+.common-elements {
+  display: flex;
+  align-items: center;
+  @include adaptiveValue("column-gap", 30, 10);
+  justify-content: space-between;
+  @include adaptiveValue("min-height", 137, 60);
+  padding-top: rem(10);
+  padding-bottom: rem(10);
+  // .common-elements__logo
+  &__logo {
+    position: relative;
+    z-index: 2;
+    flex: 0 0 260px;
+    height: 116px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: $mobile) {
+      @include adaptiveValue("flex-basis", 260, 100, 768, 320, 1);
+      @include adaptiveValue("height", 116, 50, 768, 320, 1);
+    }
+  }
+  // .common-elements__logotype
+  &__logotype {
+    max-height: 116px;
+    max-width: 100%;
+  }
+  // .common-elements__items
+  &__items {
+    max-width: 1380px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    @include adaptiveValue("column-gap", 340, 30, 1660, 1000, 1);
+    padding: rem(10);
+    @media (max-width: $mobileSmall) {
+      @include adaptiveValue("column-gap", 30, 15, 480, 320, 1);
+    }
+  }
+  // .common-elements__menu
+  &__menu {
+  }
+  // .common-elements__user
+  &__user {
+  }
+}
 // Bug fixing of select with small arrow
 .select {
   // .select__value
