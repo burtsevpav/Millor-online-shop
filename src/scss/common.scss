@@ -1,6 +1,14 @@
 // Заголовки, общие БЄМ блоки и проче...
+// Главный заголовок h1
+.title-main {
+  font-weight: 900;
+  @include adaptiveValue("font-size", 70, 25);
+  line-height: math.div(87, 70);
+  color: #ffffff;
+}
 
 // Common styles for header and footer
+
 .common-elements {
   display: flex;
   align-items: center;
@@ -73,7 +81,7 @@
 }
 
 // Orange blob background
-.wrapper {
+.bg-wrapper {
   position: relative;
   &::before {
     content: "";
