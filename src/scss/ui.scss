@@ -1,20 +1,21 @@
 .page {
 }
-.hero-tea {
-  // .hero-tea__head
+.hero-cards {
+  // .hero-cards__head
   &__head {
   }
-  // .hero-tea__body
+  // .hero-cards__body
   &__body {
   }
 }
-.head-tea-hero {
+.head-cards-hero {
   @include adaptiveValue("padding-top", 40, 15, 1660, 1360, 1);
   @include adaptiveValue("padding-bottom", 40, 30, 1660, 1360, 1);
   background: #f9b300;
-  // .head-tea-hero__container
+  // .head-cards-hero__container
   &__container {
     display: flex;
+    row-gap: rem(15);
     @media (max-width: em(860)) {
       align-items: center;
     }
@@ -22,7 +23,7 @@
       flex-direction: column;
     }
   }
-  // .head-tea-hero__content
+  // .head-cards-hero__content
   &__content {
     flex: 1 1 51%;
     @media (max-width: $tablet) {
@@ -32,7 +33,7 @@
       flex: 1 1 70%;
     }
   }
-  // .head-tea-hero__list
+  // .head-cards-hero__list
   &__list {
     display: flex;
     column-gap: rem(5);
@@ -43,30 +44,30 @@
       display: none;
     }
   }
-  // .head-tea-hero__item
+  // .head-cards-hero__item
   &__item {
   }
-  // .head-tea-hero__link
+  // .head-cards-hero__link
   &__link {
     font-weight: 500;
     line-height: math.div(21, 18);
     @include adaptiveValue("font-size", 18, 16, 1660, 1360, 1);
     color: #ffffff;
   }
-  // .head-tea-hero__title
+  // .head-cards-hero__title
   &__title {
     &:not(:last-child) {
       @include adaptiveValue("margin-bottom", 50, 15, 1660, 1360, 1);
     }
   }
-  // .head-tea-hero__text
+  // .head-cards-hero__text
   &__text {
     color: #ffffff;
     line-height: 1.3;
     @include adaptiveValue("font-size", 25, 18, 1660, 1360, 1);
   }
 
-  // .head-tea-hero__picture
+  // .head-cards-hero__picture
   &__picture {
     width: 80%;
     height: 100%;
@@ -78,25 +79,31 @@
       flex: 1 1 30%;
     }
   }
-  // .head-tea-hero__ibg-image
+  // .head-cards-hero__ibg-image
   &__ibg-image {
     padding-bottom: 79.9755%;
     position: relative;
   }
-  // .head-tea-hero__ibg-pic
+
+  // .head-cards-hero__ibg-pic
   &__ibg-pic {
     position: absolute;
     width: 100%;
     height: 100%;
     top: -20%;
     left: 22%;
+    // .head-cards-hero__ibg-pic_vending
+    &_vending {
+      top: -5%;
+      left: 0;
+    }
   }
 }
 
-.body-tea-hero {
+.body-cards-hero {
   @include adaptiveValue("margin-top", -110, 0, 1660, 992, 1);
   background: url("@img/tea/hero-tea/decor-two.svg") 0 0 / 100% no-repeat;
-  // .body-tea-hero__container
+  // .body-cards-hero__container
   &__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -111,21 +118,19 @@
       grid-template-columns: repeat(2, 1fr);
     }
     @media (max-width: $mobileSmall) {
-      @include adaptiveValue("margin-top", -80, -20, 480, 332, 1);
+      @include adaptiveValue("margin-top", -60, -20, 480, 332, 1);
     }
-    // @media (max-width: em(380)) {
-    //   grid-template-columns: repeat(1, 1fr);
-    // }
   }
 }
-.tea-hero-item {
+.cards-hero-item {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  @include adaptiveValue("padding-top", 30, 15, 768, 320, 1);
-  @include adaptiveValue("padding-right", 30, 15, 768, 320, 1);
-  @include adaptiveValue("padding-bottom", 40, 15, 768, 320, 1);
-  @include adaptiveValue("padding-left", 30, 15, 768, 320, 1);
+  align-items: center;
+  @include adaptiveValue("padding-top", 20, 15, 1660, 1110, 1);
+  @include adaptiveValue("padding-right", 30, 10, 1660, 1110, 1);
+  @include adaptiveValue("padding-bottom", 40, 25, 1660, 1110, 1);
+  @include adaptiveValue("padding-left", 30, 10, 1660, 1110, 1);
   background: #ffffff;
   box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
   border-radius: 20px;
@@ -135,10 +140,10 @@
       box-shadow: 0 0 30px rgba(249, 178, 0, 0.953);
     }
   }
-  // .tea-hero-item__image
+  // .cards-hero-item__image
   &__image {
-    flex: 1 1 150px;
-    height: 200px;
+    flex: 0 1 200px;
+    max-width: 143px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -146,15 +151,36 @@
       @include adaptiveValue("margin-bottom", 20, 15);
     }
   }
-  // .tea-hero-item__img
+  // .cards-hero-item__img
   &__img {
     max-width: 100%;
     max-height: 200px;
   }
-  // .tea-hero-item__title
+  // .cards-hero-item__title
   &__title {
     font-weight: 700;
     line-height: math.div(30, 25);
     @include adaptiveValue("font-size", 25, 18);
+    // .cards-hero-item__title_font
+    &_font {
+      @include adaptiveValue("font-size", 25, 14);
+    }
+  }
+}
+
+// Стили для страницы vending.html
+.cards-hero-item {
+  // .cards-hero-item__picture
+  &__picture {
+    width: 100%;
+    height: 100%;
+  }
+  // .cards-hero-item__ibg-image
+  &__ibg-image {
+    display: block;
+    padding-bottom: 60%;
+  }
+  // .cards-hero-item__ibg-pic
+  &__ibg-pic {
   }
 }
