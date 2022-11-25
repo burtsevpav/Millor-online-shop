@@ -1,6 +1,7 @@
 .page {
 }
 .hero-cards {
+  @include adaptiveValue("padding-bottom", 40, 30, 1660, 1360, 1);
   // .hero-cards__head
   &__head {
   }
@@ -243,5 +244,139 @@
     font-weight: 700;
     line-height: math.div(30, 25);
     @include adaptiveValue("font-size", 25, 16);
+  }
+}
+
+// БЭМ-Блок с ассортиментом товаров
+.assortment {
+  background: #f5f5f5;
+  // .assortment__container
+  &__container {
+  }
+  // .assortment__head
+  &__head {
+    @include adaptiveValue("padding-top", 27, 15);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 70, 30);
+    }
+  }
+  // .assortment__button
+  &__button {
+    justify-content: start;
+  }
+  // .assortment__body
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    @include adaptiveValue("column-gap", 20, 15);
+    @include adaptiveValue("row-gap", 20, 15);
+  }
+}
+
+.card-assortment {
+  @include adaptiveValue("padding-top", 30, 10);
+  @include adaptiveValue("padding-right", 30, 10);
+  @include adaptiveValue("padding-bottom", 50, 10);
+  @include adaptiveValue("padding-left", 30, 10);
+  // padding: rem(30) rem(40) rem(50) rem(40);
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  border-radius: 20px;
+  // .card-assortment__head
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    column-gap: rem(5);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 15, 10);
+    }
+  }
+  // .card-assortment__reviews
+  &__reviews {
+  }
+  // .card-assortment__stars
+  &__stars {
+    color: #f9b300;
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 10, 5);
+    }
+  }
+  // .card-assortment__numbers
+  &__numbers {
+    column-gap: rem(7);
+    display: flex;
+    align-items: center;
+  }
+  // .card-assortment__number
+  &__number {
+    font-weight: 700;
+    line-height: math.div(24, 20);
+    @include adaptiveValue("font-size", 20, 18);
+  }
+  // .card-assortment__review
+  &__review {
+    font-weight: 500;
+    line-height: math.div(16, 14);
+    font-size: rem(14);
+    color: #5b5b5b;
+  }
+  // .card-assortment__body
+  &__body {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 22, 10);
+    }
+  }
+
+  // .card-assortment__reference
+  &__reference {
+  }
+
+  // .card-assortment__ibg-image
+  &__ibg-image {
+    padding-bottom: 71.4743%;
+  }
+  // .card-assortment__ibg-pic
+  &__ibg-pic {
+  }
+  // .card-assortment__footer
+  &__footer {
+  }
+  // .card-assortment__title
+  &__title {
+    display: block;
+    font-weight: 900;
+    line-height: math.div(31, 25);
+    @include adaptiveValue("font-size", 25, 20);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 30, 15);
+    }
+  }
+  // .card-assortment__text
+  &__text {
+    line-height: math.div(21, 18);
+    font-weight: 500;
+    font-size: rem(18);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 33, 15);
+    }
+  }
+  // .card-assortment__prefooter
+  &__prefooter {
+    display: flex;
+    align-items: center;
+    @include adaptiveValue("column-gap", 30, 10);
+  }
+  // .card-assortment__price
+  &__price {
+    font-weight: 900;
+    line-height: math.div(44, 35);
+    @include adaptiveValue("font-size", 35, 25);
+    text-align: center;
+  }
+  // .card-assortment__button
+  &__button {
+    // position: relative;
+    // z-index: 50;
   }
 }
