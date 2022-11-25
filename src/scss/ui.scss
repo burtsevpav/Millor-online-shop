@@ -97,6 +97,12 @@
       top: -5%;
       left: 0;
     }
+    // .head-cards-hero__ibg-pic_healthy
+    &_healthy {
+      top: -5%;
+      left: 10%;
+      width: 80%;
+    }
   }
 }
 
@@ -120,6 +126,13 @@
     @media (max-width: $mobileSmall) {
       @include adaptiveValue("margin-top", -60, -20, 480, 332, 1);
     }
+    // .body-cards-hero__container_healthy
+    &_healthy {
+      grid-template-columns: repeat(3, 1fr);
+      @media (max-width: em(660)) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
   }
 }
 .cards-hero-item {
@@ -140,6 +153,7 @@
       box-shadow: 0 0 30px rgba(249, 178, 0, 0.953);
     }
   }
+
   // .cards-hero-item__image
   &__image {
     flex: 0 1 200px;
@@ -182,5 +196,52 @@
   }
   // .cards-hero-item__ibg-pic
   &__ibg-pic {
+  }
+}
+
+// Стили карточек для страницы healthy.html
+.cards-healthy-item {
+  display: flex;
+  align-items: center;
+  padding: rem(20) rem(20) rem(40) rem(20);
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+  border-radius: 20px;
+  transition: all 0.1s ease 0s;
+  @media (any-hover: hover) {
+    &:hover {
+      box-shadow: 0 0 30px rgba(249, 178, 0, 0.953);
+    }
+  }
+  @media (max-width: em(1400)) {
+    flex-direction: column;
+  }
+
+  // .cards-healthy-item__image
+  &__image {
+    flex: 0 0 182px;
+    max-height: 279px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    // @media (max-width: em(1400)) {
+    //   flex: 0 1 279px;
+    //   max-width: 182px;
+    //   display: flex;
+    //   align-items: flex-start;
+    //   justify-content: center;
+    // }
+  }
+  // .cards-healthy-item__img
+  &__img {
+    max-width: 100%;
+    max-height: 279px;
+    border-radius: 20px;
+  }
+  // .cards-healthy-item__title
+  &__title {
+    font-weight: 700;
+    line-height: math.div(30, 25);
+    @include adaptiveValue("font-size", 25, 16);
   }
 }
