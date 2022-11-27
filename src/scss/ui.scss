@@ -275,8 +275,11 @@
     @media (max-width: em(1620)) {
       grid-template-columns: repeat(3, 1fr);
     }
-    @media (max-width: em(1200)) {
-      grid-template-columns: repeat(3, 1fr);
+    @media (max-width: em(1180)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: $mobileSmall) {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }
@@ -285,10 +288,10 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  @include adaptiveValue("padding-top", 30, 10);
-  @include adaptiveValue("padding-right", 30, 10);
-  @include adaptiveValue("padding-bottom", 50, 10);
-  @include adaptiveValue("padding-left", 30, 10);
+  @include adaptiveValue("padding-top", 30, 15);
+  @include adaptiveValue("padding-right", 30, 15);
+  @include adaptiveValue("padding-bottom", 50, 15);
+  @include adaptiveValue("padding-left", 30, 15);
   background: #ffffff;
   border: 1px solid #e4e4e4;
   border-radius: 20px;
@@ -300,9 +303,15 @@
     &:not(:last-child) {
       @include adaptiveValue("margin-bottom", 15, 10);
     }
+    @media (max-width: $mobile) {
+      flex-direction: column-reverse;
+    }
   }
   // .card-assortment__reviews
   &__reviews {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 25, 20);
+    }
   }
   // .card-assortment__stars
   &__stars {
@@ -380,6 +389,10 @@
     justify-content: space-between;
     align-items: center;
     @include adaptiveValue("column-gap", 30, 10);
+    @media (max-width: em(600)) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
   // .card-assortment__price
   &__price {
@@ -387,6 +400,9 @@
     line-height: math.div(44, 35);
     @include adaptiveValue("font-size", 35, 25, 768, 320, 1);
     text-align: center;
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
   }
   // .card-assortment__button
   &__button {
