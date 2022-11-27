@@ -265,11 +265,13 @@
   &__button {
     justify-content: start;
   }
+
   // .assortment__body
   &__body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 1fr;
+
     @include adaptiveValue("column-gap", 20, 15);
     @include adaptiveValue("row-gap", 20, 15);
     @media (max-width: em(1620)) {
