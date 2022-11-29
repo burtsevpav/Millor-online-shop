@@ -865,6 +865,28 @@
 // Блок 8
 .subscribe {
   @include adaptiveValue("padding-bottom", 80, 30);
+  // .subscribe_bg
+  &_bg {
+    @include adaptiveValue("padding-top", 180, 50);
+    background: url("../img/bg-one.svg") 0 2% / 100% no-repeat;
+    position: relative;
+    @media (max-width: $mobile) {
+      background: url("../img/bg-one.svg") 0 1% / 100% no-repeat;
+    }
+    @media (max-width: $mobileSmall) {
+      background: url("../img/bg-one.svg") 0 0.5% / 100% no-repeat;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: url("../img/bg-two.svg") 0 0 / 100% no-repeat;
+    }
+  }
+
   // .subscribe__container
   &__container {
     display: flex;
@@ -876,6 +898,7 @@
   }
   // .subscribe__body
   &__body {
+    z-index: 150;
     flex: 1 1 58.0723%;
   }
   // .subscribe__title
