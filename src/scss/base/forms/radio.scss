@@ -1,9 +1,10 @@
 .options {
   display: flex;
-  @include adaptiveValue("column-gap", 50, 20);
+  flex-wrap: wrap;
+  @include adaptiveValue("column-gap", 50, 20, 1660, 1370, 1);
   align-items: flex-start;
   &:not(:last-child) {
-    @include adaptiveValue("margin-bottom", 68, 30);
+    @include adaptiveValue("margin-bottom", 68, 15, 1660, 1370, 1);
   }
 
   // .options__item
@@ -11,7 +12,7 @@
     position: relative;
     cursor: pointer;
     &:not(:last-child) {
-      margin-bottom: em(5);
+      margin-bottom: em(10);
     }
   }
   // .options__input
@@ -31,6 +32,8 @@
   }
   // .options__label
   &__label {
+    @include adaptiveValue("font-size", 25, 18, 1660, 992, 1);
+    // font-size: rem(18);
     display: inline-flex;
     align-items: center;
     cursor: pointer;

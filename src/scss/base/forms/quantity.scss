@@ -6,7 +6,10 @@
   background: #f6f6f6;
   border: 1px solid #d6d6d6;
   border-radius: rem(5);
-  padding: rem(15) rem(30);
+  @include adaptiveValue("padding-top", 15, 10, 1660, 992, 1);
+  @include adaptiveValue("padding-bottom", 15, 10, 1660, 992, 1);
+  @include adaptiveValue("padding-left", 30, 15, 1660, 992, 1);
+  @include adaptiveValue("padding-right", 30, 15, 1660, 992, 1);
   // .quantity__button
   &__button {
     flex: 0 0 rem(30);
@@ -21,8 +24,8 @@
       transition: all 0.3s ease 0s;
       margin: 0px 0px 0px rem(-7);
       background-color: #000000;
-      width: rem(15);
-      height: rem(3);
+      @include adaptiveValue("width", 15, 13, 1660, 1370, 1);
+      @include adaptiveValue("height", 3, 2, 1660, 1370, 1);
     }
     @media (any-hover: hover) {
       &:hover {
@@ -49,7 +52,7 @@
       background: #f6f6f6;
       height: 100%;
       color: #222222;
-      font-size: rem(25);
+      @include adaptiveValue("font-size", 25, 18, 1660, 1370, 1);
       font-weight: 600;
       width: 100%;
       text-align: center;
