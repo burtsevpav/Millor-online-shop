@@ -5,7 +5,7 @@
     <div class="wrapper">
       @@include('html/_header.htm',{})
       <main class="page">
-        <div class="product-page">
+        <section class="product-page">
           <div class="product-page__container">
             <div class="product-page__head">
               <ul class="product-page__list">
@@ -75,7 +75,24 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
+        <section class="product-nav">
+          <div class="product-nav__container">
+            <nav class="product-nav__navigation">
+              <ul class="product-nav__list">
+                <li class="product-nav__item">
+                  <a href="" class="product-nav__link">Описание</a>
+                </li>
+                <li class="product-nav__item">
+                  <a href="" class="product-nav__link">Как готовить?</a>
+                </li>
+                <li class="product-nav__item">
+                  <a href="" class="product-nav__link">Отзывы</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
       </main>
       @@include('html/_footer.htm',{})
     </div>
