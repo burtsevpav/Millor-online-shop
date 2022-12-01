@@ -151,15 +151,15 @@
 }
 
 // Блок 2
-.product-nav {
+.common-nav {
   margin-top: rem(-50);
   @include adaptiveValue("padding-top", 140, 90);
   @include adaptiveValue("padding-bottom", 90, 40);
   background: url("../img/product/bg-item.svg") 0 0 / 100% no-repeat;
-  // .product-nav__navigation
+  // .common-nav__navigation
   &__navigation {
   }
-  // .product-nav__list
+  // .common-nav__list
   &__list {
     display: flex;
     @include adaptiveValue("column-gap", 20, 10);
@@ -168,11 +168,11 @@
       flex-direction: column;
     }
   }
-  // .product-nav__item
+  // .common-nav__item
   &__item {
     flex: 1 1 33.333%;
   }
-  // .product-nav__link
+  // .common-nav__link
   &__link {
     height: 100%;
     width: 100%;
@@ -198,5 +198,239 @@
         border: 1px solid $mainElementColor;
       }
     }
+  }
+}
+// Блок 3
+.text-picture-common {
+  @include adaptiveValue("padding-bottom", 60, 30);
+  // .text-picture-common__container
+  &__container {
+    display: flex;
+    @include adaptiveValue("column-gap", 160, 50, 1660, 1370, 1);
+    @include adaptiveValue("row-gap", 30, 20, 660, 320, 1);
+    @media (max-width: em(660)) {
+      flex-direction: column;
+    }
+  }
+  // .text-picture-common__content
+  &__content {
+    flex: 1 1 73.3333%;
+  }
+  // .text-picture-common__text
+  &__text {
+    &:not(:last-child) {
+      @include adaptiveValue("padding-bottom", 30, 15);
+    }
+  }
+  // .text-picture-common__picture
+  &__picture {
+    flex: 1 1 26.6667%;
+    @media (max-width: em(660)) {
+      width: 50%;
+      height: 50%;
+      align-self: center;
+    }
+  }
+  // .text-picture-common__ibg-image
+  &__ibg-image {
+    padding-bottom: 105.2896%;
+  }
+  // .text-picture-common__ibg-pic
+  &__ibg-pic {
+  }
+}
+// Блок 4
+.title-text-common {
+  @include adaptiveValue("padding-top", 50, 30);
+  @include adaptiveValue("padding-bottom", 100, 30);
+  border: 1px solid #b3b3b3;
+
+  // .title-text-common__container
+  &__container {
+  }
+  // .title-text-common__title
+  &__title {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 50, 20);
+    }
+  }
+  // .title-text-common__text
+  &__text {
+    max-width: rem(1100);
+  }
+}
+// Блок 5
+.reviews-common {
+  background: #f5f5f5;
+  // .reviews-common__container
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  // .reviews-common__head
+  &__head {
+    @include adaptiveValue("padding-top", 50, 20);
+    @include adaptiveValue("padding-bottom", 100, 20);
+  }
+  // .reviews-common__title
+  &__title {
+  }
+  // .reviews-common__body
+  &__body {
+    @include adaptiveValue("padding-bottom", 50, 20);
+  }
+  // .reviews-common__items
+  &__items {
+    margin-left: rem(-10);
+    margin-right: rem(-10);
+  }
+  // .reviews-common__item
+  &__item {
+    @include adaptiveValue("padding-left", 20, 10);
+    @include adaptiveValue("padding-right", 20, 10);
+    @include adaptiveValue("padding-top", 30, 15);
+    @include adaptiveValue("padding-bottom", 30, 15);
+  }
+}
+.block {
+  // .block__more
+  &__more {
+    // .block__more_wide
+    &_wide {
+      @include adaptiveValue("margin-top", 30, 15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      border: 1px solid #e4e4e4;
+      border-radius: 10px;
+      @include adaptiveValue("padding", 23, 15);
+      width: 100%;
+      transition: all 0.2s ease 0s;
+      @media (any-hover: hover) {
+        &:hover {
+          color: $mainElementColor;
+          background: #fff7e1;
+          border: 1px solid $mainElementColor;
+          span {
+            color: $mainElementColor;
+          }
+        }
+      }
+      span {
+        padding-top: 0;
+        border-bottom: none;
+        color: black;
+        @media (any-hover: hover) {
+          &:hover {
+            color: $mainElementColor;
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.item-reviews {
+  background: #ffffff;
+  box-shadow: 0px 0px 25px rgba(149, 149, 149, 0.25);
+  border-radius: 20px;
+  @media (max-width: $tablet) {
+    box-shadow: 0px 0px 18px rgba(149, 149, 149, 0.25);
+  }
+  @media (max-width: $mobile) {
+    box-shadow: 0px 0px 15px rgba(149, 149, 149, 0.25);
+  }
+  // .item-reviews__head
+  &__head {
+    @include adaptiveValue("padding-top", 40, 20);
+    @include adaptiveValue("padding-left", 70, 20);
+    @include adaptiveValue("padding-right", 70, 20);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 80, 20);
+    }
+  }
+  // .item-reviews__quotes
+  &__quotes {
+    font-weight: 900;
+    line-height: math.div(50, 40);
+    @include adaptiveValue("font-size", 40, 30);
+  }
+  // .item-reviews__items
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: rem(10);
+    row-gap: rem(8);
+    justify-content: space-between;
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 20, 15);
+    }
+  }
+  // .item-reviews__subtitle
+  &__subtitle {
+    font-weight: 700;
+    @include adaptiveValue("font-size", 25, 20);
+    line-height: 130%;
+  }
+  // .item-reviews__date
+  &__date {
+    font-weight: 500;
+    @include adaptiveValue("font-size", 20, 18);
+    line-height: 130%;
+  }
+  // .item-reviews__stars
+  &__stars {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 40, 20);
+    }
+  }
+  // .item-reviews__text
+  &__text {
+    max-width: rem(1100);
+    @include adaptiveValue("font-size", 20, 16);
+    font-weight: 500;
+    line-height: 130%;
+  }
+  // .item-reviews__bottom
+  &__bottom {
+    display: flex;
+    @include adaptiveValue("column-gap", 40, 20);
+    background: #fff7e1;
+    border-radius: 0px 0px 20px 20px;
+    @include adaptiveValue("padding-top", 25, 20);
+    @include adaptiveValue("padding-bottom", 40, 20);
+    @include adaptiveValue("padding-left", 70, 20);
+    @include adaptiveValue("padding-right", 70, 20);
+  }
+  // .item-reviews__image
+  &__image {
+    flex: 0 1 70px;
+    height: rem(70);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  // .item-reviews__img
+  &__img {
+    max-height: rem(70);
+    max-width: 100%;
+  }
+  // .item-reviews__content
+  &__content {
+    display: flex;
+    flex-direction: column;
+    @include adaptiveValue("row-gap", 10, 5);
+    @include adaptiveValue("font-size", 20, 18);
+    line-height: 130%;
+  }
+  // .item-reviews__name
+  &__name {
+    font-weight: 700;
+  }
+  // .item-reviews__location
+  &__location {
+    font-weight: 500;
   }
 }
