@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Какао и кофе" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <section class="product-page">
+          <div class="product-page__container">
+            <div class="product-page__head">
+              <ul class="product-page__list">
+                <li class="product-page__item">
+                  <a href="index.html" class="product-page__link">Главная</a>
+                </li>
+                <li class="product-page__item">
+                  <a href="index.html" class="product-page__link">• Каталог товаров</a>
+                </li>
+                <li class="product-page__item">
+                  <a href="vending.html" class="product-page__link">• Продукция для вендинга</a>
+                </li>
+                <li class="product-page__item">
+                  <a href="product-vending.html" class="product-page__link">• Какао и кофе</a>
+                </li>
+              </ul>
+            </div>
+            <div class="product-page__body">
+              <div class="product-item">
+                <div class="product-item__picture">
+                  <div class="product-item__ibg-image">
+                    <img src="@img/product/coffee.jpg" alt="Кофе" class="product-item__ibg-pic" />
+                  </div>
+                </div>
+                <div class="product-item__content">
+                  <h2 class="product-item__title title">Какао гранулированный</h2>
+                  <h5 class="product-item__subtitle">Гранулированные кофейные напитки</h5>
+                  <div class="product-item__reviews">
+                    <div class="product-item__stars">★★★★☆</div>
+                    <div class="product-item__numbers">
+                      <p class="product-item__number">4.0</p>
+                      <a href="" class="product-item__review">(32 отзыва)</a>
+                    </div>
+                  </div>
+                  <p class="product-item__text">
+                    Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке
+                    свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и
+                    итальянские агломераторы для производства растворимой продукции.
+                  </p>
+                  <div class="options">
+                    <div class="options__item">
+                      <input hidden id="o_1" class="options__input" checked type="radio" value="1" name="option" />
+                      <label for="o_1" class="options__label"><span class="options__text">10 кг.</span></label>
+                    </div>
+                    <div class="options__item">
+                      <input hidden id="o_2" class="options__input" type="radio" value="2" name="option" />
+                      <label for="o_2" class="options__label"><span class="options__text">18 кг.</span></label>
+                    </div>
+                    <div class="options__item">
+                      <input hidden id="o_3" class="options__input" type="radio" value="3" name="option" />
+                      <label for="o_3" class="options__label"><span class="options__text">25 кг.</span></label>
+                    </div>
+                    <div class="options__item">
+                      <input hidden id="o_4" class="options__input" type="radio" value="4" name="option" />
+                      <label for="o_4" class="options__label"><span class="options__text">30 кг.</span></label>
+                    </div>
+                    <div class="options__item">
+                      <input hidden id="o_5" class="options__input" type="radio" value="5" name="option" />
+                      <label for="o_5" class="options__label"><span class="options__text">33 кг.</span></label>
+                    </div>
+                  </div>
+                  <div class="product-item__items">
+                    <button class="product-item__button button">Оставить заявку</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="common-nav">
+          <div class="common-nav__container">
+            <nav class="common-nav__navigation">
+              <ul class="common-nav__list">
+                <li class="common-nav__item">
+                  <a href="#" data-goto=".text-picture-common" data-goto-top="30" class="common-nav__link">Описание</a>
+                </li>
+                <li class="common-nav__item">
+                  <a href="#" data-goto=".title-text-common" class="common-nav__link">Как готовить?</a>
+                </li>
+                <li class="common-nav__item">
+                  <a href="#" data-goto=".reviews-common" class="common-nav__link">Отзывы</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="text-picture-common">
+          <div class="text-picture-common__container">
+            <div data-showmore-media="1440,max" data-showmore="items" class="text-picture-common__content">
+              <div data-showmore-content="2" class="text-picture-common__items">
+                <p class="text-picture-common__text text">
+                  Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в
+                  отношении поставленных задач. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в
+                  значительной степени обуславливает создание модели развития.
+                </p>
+                <p class="text-picture-common__text text">
+                  Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия.
+                  Таким образом укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития.
+                </p>
+                <p class="text-picture-common__text text">
+                  Товарищи! Hеализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий
+                  условий активизации. С другой стороны реализация намеченных плановых заданий требуют от нас анализа существенных финансовых и
+                  административных условий.
+                </p>
+              </div>
+              <button hidden data-showmore-button type="button" class="block__more">
+                <span>Показать еще</span>
+                <span>Скрыть</span>
+              </button>
+            </div>
+            <div class="text-picture-common__picture">
+              <div class="text-picture-common__ibg-image">
+                <img src="@img/product/coffee-card.jpg" alt="Кофе" class="text-picture-common__ibg-pic" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="title-text-common">
+          <div class="title-text-common__container">
+            <h2 class="title-text-common__title title">Как готовить?</h2>
+            <p class="title-text-common__text text">
+              Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в
+              отношении поставленных задач. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в
+              значительной степени обуславливает создание модели развития ленных задач. Значимость этих проблем настолько очевидна, что дальнейшее
+              развитие различных форм деятельности в значительной степени обуславливает создание модели развития.
+            </p>
+          </div>
+        </section>
+        <section class="reviews-common">
+          <div class="reviews-common__container">
+            <div class="reviews-common__head">
+              <h2 class="reviews-common__title title">Отзывы</h2>
+            </div>
+            <div data-showmore="items" class="reviews-common__body">
+              <div data-showmore-content="3" class="reviews-common__items">
+                <div class="reviews-common__item">
+                  <article class="item-reviews">
+                    <div class="item-reviews__head">
+                      <div class="item-reviews__quotes">“”</div>
+                      <div class="item-reviews__items">
+                        <p class="item-reviews__subtitle">Отличный вкус!</p>
+                        <p class="item-reviews__date">21.12.2020</p>
+                      </div>
+                      <div class="item-reviews__stars stars">★★★★☆</div>
+                      <p class="item-reviews__text">
+                        Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании
+                        соответствующий условий активизации.
+                      </p>
+                    </div>
+                    <div class="item-reviews__bottom">
+                      <div class="item-reviews__image">
+                        <img src="@img/product/avatar.png" alt="Аватар" class="item-reviews__img" />
+                      </div>
+                      <div class="item-reviews__content">
+                        <p class="item-reviews__name">Ирина</p>
+                        <p class="item-reviews__location">г. Москва</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="reviews-common__item">
+                  <article class="item-reviews">
+                    <div class="item-reviews__head">
+                      <div class="item-reviews__quotes">“”</div>
+                      <div class="item-reviews__items">
+                        <p class="item-reviews__subtitle">Отличный вкус!</p>
+                        <p class="item-reviews__date">21.12.2020</p>
+                      </div>
+                      <div class="item-reviews__stars stars">★★★★☆</div>
+                      <p class="item-reviews__text">
+                        Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании
+                        соответствующий условий активизации.
+                      </p>
+                    </div>
+                    <div class="item-reviews__bottom">
+                      <div class="item-reviews__image">
+                        <img src="@img/product/avatar.png" alt="Аватар" class="item-reviews__img" />
+                      </div>
+                      <div class="item-reviews__content">
+                        <p class="item-reviews__name">Ирина</p>
+                        <p class="item-reviews__location">г. Москва</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="reviews-common__item">
+                  <article class="item-reviews">
+                    <div class="item-reviews__head">
+                      <div class="item-reviews__quotes">“”</div>
+                      <div class="item-reviews__items">
+                        <p class="item-reviews__subtitle">Отличный вкус!</p>
+                        <p class="item-reviews__date">21.12.2020</p>
+                      </div>
+                      <div class="item-reviews__stars stars">★★★★☆</div>
+                      <p class="item-reviews__text">
+                        Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании
+                        соответствующий условий активизации.
+                      </p>
+                    </div>
+                    <div class="item-reviews__bottom">
+                      <div class="item-reviews__image">
+                        <img src="@img/product/avatar.png" alt="Аватар" class="item-reviews__img" />
+                      </div>
+                      <div class="item-reviews__content">
+                        <p class="item-reviews__name">Ирина</p>
+                        <p class="item-reviews__location">г. Москва</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="reviews-common__item">
+                  <article class="item-reviews">
+                    <div class="item-reviews__head">
+                      <div class="item-reviews__quotes">“”</div>
+                      <div class="item-reviews__items">
+                        <p class="item-reviews__subtitle">Отличный вкус!</p>
+                        <p class="item-reviews__date">21.12.2020</p>
+                      </div>
+                      <div class="item-reviews__stars stars">★★★★☆</div>
+                      <p class="item-reviews__text">
+                        Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании
+                        соответствующий условий активизации.
+                      </p>
+                    </div>
+                    <div class="item-reviews__bottom">
+                      <div class="item-reviews__image">
+                        <img src="@img/product/avatar.png" alt="Аватар" class="item-reviews__img" />
+                      </div>
+                      <div class="item-reviews__content">
+                        <p class="item-reviews__name">Ирина</p>
+                        <p class="item-reviews__location">г. Москва</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <button hidden data-showmore-button type="button" class="block__more block__more_wide">
+                <span>Показать еще</span>
+                <span>Скрыть</span>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="subscribe subscribe_bg">
+          <div class="subscribe__container">
+            <div class="subscribe__body">
+              <h2 class="subscribe__title title">Подписка на новости и рассылку</h2>
+              <p class="subscribe__subtitle">
+                Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных предложений.
+              </p>
+              <form data-popup-message="#form-message" data-dev method="post" action="#" class="subscribe__form form-subscribe">
+                <input
+                  data-validate
+                  data-required
+                  autocomplete="off"
+                  type="email"
+                  name="inputTwo"
+                  data-error="Введите E-mail!"
+                  placeholder="Ваш email"
+                  class="form-subscribe__input input"
+                />
+                <button type="submit" class="form-subscribe__button">Подписаться</button>
+              </form>
+              <div class="subscribe__text">
+                Нажимая на кнопку “Подписаться”, вы принимаете правила <span><a href="">пользовательского соглашения</a></span>
+              </div>
+            </div>
+            <div data-da=".subscribe__body,660,2" class="subscribe__picture">
+              <div class="subscribe__ibg-image">
+                <img src="../img/main/hero/grain.png" alt="Кофе" class="subscribe__ibg-pic" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>
