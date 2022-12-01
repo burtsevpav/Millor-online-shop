@@ -1,6 +1,7 @@
 .options {
   display: flex;
   flex-wrap: wrap;
+  row-gap: rem(10);
   @include adaptiveValue("column-gap", 50, 20, 1660, 1370, 1);
   align-items: flex-start;
   &:not(:last-child) {

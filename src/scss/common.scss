@@ -542,3 +542,44 @@
     }
   }
 }
+
+// Общая кнопка "Показать еще"
+.block {
+  // .block__more
+  &__more {
+    // .block__more_wide
+    &_wide {
+      @include adaptiveValue("margin-top", 30, 15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      border: 1px solid #e4e4e4;
+      border-radius: 10px;
+      @include adaptiveValue("padding", 23, 15);
+      width: 100%;
+      transition: all 0.2s ease 0s;
+      @media (any-hover: hover) {
+        &:hover {
+          color: $mainElementColor;
+          background: #fff7e1;
+          border: 1px solid $mainElementColor;
+          span {
+            color: $mainElementColor;
+          }
+        }
+      }
+      span {
+        padding-top: 0;
+        border-bottom: none;
+        color: black;
+        @media (any-hover: hover) {
+          &:hover {
+            color: $mainElementColor;
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}
