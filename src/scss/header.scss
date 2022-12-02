@@ -95,6 +95,7 @@
     color: #a9a9a9;
     &::placeholder {
       color: #c4c4c4;
+      @include adaptiveValue("font-size", 25, 18);
     }
   }
 }
