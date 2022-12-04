@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Чай" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <div class="page-nav">
+          <div class="page-nav__container">
+            <ul class="page-nav__list">
+              <li class="page-nav__item">
+                <a href="index.html" class="page-nav__link">Главная</a>
+              </li>
+              <li class="page-nav__item">
+                <a href="blog.html" class="page-nav__link">• Блог</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="common-nav">
+          <div class="common-nav__container">
+            <nav class="common-nav__navigation">
+              <ul class="common-nav__list">
+                <li class="common-nav__item">
+                  <a href="#" data-goto=".text-picture-common" data-goto-top="30" class="common-nav__link">Описание</a>
+                </li>
+                <li class="common-nav__item">
+                  <a href="#" data-goto=".title-text-common" class="common-nav__link">Как готовить?</a>
+                </li>
+                <li class="common-nav__item">
+                  <a href="#" data-goto=".reviews-common" class="common-nav__link">Отзывы</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <section class="items-nav">
+          <div class="common-head">
+            <div class="common-head__container">
+              <h2 class="common-head__title title">Приготовление кофе разными способами</h2>
+            </div>
+          </div>
+          <div class="common-items">
+            <div class="common-items__container">
+              <a href="" class="item-common">
+                <h5 class="item-common__title">Турка</h5>
+                <div class="item-common__image">
+                  <img src="@img/blog/cezve.svg" alt="Турка" class="item-common__img" />
+                </div>
+              </a>
+              <a href="" class="item-common">
+                <h5 class="item-common__title">Френч-пресс</h5>
+                <div class="item-common__image">
+                  <img src="@img/blog/french-press.svg" alt="Френч-пресс" class="item-common__img" />
+                </div>
+              </a>
+              <a href="" class="item-common">
+                <h5 class="item-common__title">Мока</h5>
+                <div class="item-common__image">
+                  <img src="@img/blog/moka.svg" alt="Мока" class="item-common__img" />
+                </div>
+              </a>
+              <a href="" class="item-common">
+                <h5 class="item-common__title">Эспрессо</h5>
+                <div class="item-common__image">
+                  <img src="@img/blog/espresso.svg" alt="Эспрессо" class="item-common__img" />
+                </div>
+              </a>
+              <a href="" class="item-common">
+                <h5 class="item-common__title">Воронка</h5>
+                <div class="item-common__image">
+                  <img src="@img/blog/funnel.svg" alt="Воронка" class="item-common__img" />
+                </div>
+              </a>
+              <a href="" class="item-common">
+                <h5 class="item-common__title">Аэропресс</h5>
+                <div class="item-common__image">
+                  <img src="@img/blog/aeropress.svg" alt="Аэропресс" class="item-common__img" />
+                </div>
+              </a>
+              <a href="" class="item-common">
+                <h5 class="item-common__title">Чашка</h5>
+                <div class="item-common__image">
+                  <img src="@img/blog/cup.svg" alt="Чашка" class="item-common__img" />
+                </div>
+              </a>
+              <a href="" class="item-common">
+                <h5 class="item-common__title">Автомат</h5>
+                <div class="item-common__image">
+                  <img src="@img/blog/auto.svg" alt="Автомат" class="item-common__img" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="subscribe subscribe_bg">
+          <div class="subscribe__container">
+            <div class="subscribe__body">
+              <h2 class="subscribe__title title">Подписка на новости и рассылку</h2>
+              <p class="subscribe__subtitle">
+                Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных предложений.
+              </p>
+              <form data-popup-message="#form-message" data-dev method="post" action="#" class="subscribe__form form-subscribe">
+                <input
+                  data-validate
+                  data-required
+                  autocomplete="off"
+                  type="email"
+                  name="inputTwo"
+                  data-error="Введите E-mail!"
+                  placeholder="Ваш email"
+                  class="form-subscribe__input input"
+                />
+                <button type="submit" class="form-subscribe__button">Подписаться</button>
+              </form>
+              <div class="subscribe__text">
+                Нажимая на кнопку “Подписаться”, вы принимаете правила <span><a href="">пользовательского соглашения</a></span>
+              </div>
+            </div>
+            <div data-da=".subscribe__body,660,2" class="subscribe__picture">
+              <div class="subscribe__ibg-image">
+                <img src="../img/main/hero/grain.png" alt="Кофе" class="subscribe__ibg-pic" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>

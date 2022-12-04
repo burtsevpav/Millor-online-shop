@@ -152,10 +152,14 @@
 
 // Блок 2
 .common-nav {
-  margin-top: rem(-50);
-  @include adaptiveValue("padding-top", 140, 90);
-  @include adaptiveValue("padding-bottom", 90, 40);
-  background: url("../img/product/bg-item.svg") 0 0 / 100% no-repeat;
+  // .common-nav_bg
+  &_bg {
+    margin-top: rem(-50);
+    @include adaptiveValue("padding-top", 140, 90);
+    @include adaptiveValue("padding-bottom", 90, 40);
+    background: url("../img/product/bg-item.svg") 0 0 / 100% no-repeat;
+  }
+
   // .common-nav__navigation
   &__navigation {
   }
