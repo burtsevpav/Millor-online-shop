@@ -7,6 +7,7 @@
   // .page-nav__list
   &__list {
     display: flex;
+    flex-wrap: wrap;
     column-gap: rem(5);
   }
   // .page-nav__item
@@ -33,9 +34,8 @@
   &__title {
   }
 }
-
 .common-items {
-  @include adaptiveValue("padding-bottom", 110, 30);
+  @include adaptiveValue("margin-bottom", 90, 20, 1660, 1370, 1);
   // .common-items__container
   &__container {
     display: grid;
@@ -67,6 +67,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: rem(25);
   padding-bottom: rem(40);
@@ -98,8 +99,28 @@
   }
   // .item-common__image
   &__image {
+    flex: 0 1 84px;
+    width: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   // .item-common__img
   &__img {
+    max-width: 100%;
+    max-height: 84px;
+  }
+}
+// Общий блок c изображением
+.common-picture {
+  // .common-picture__container
+  &__container {
+  }
+  // .common-picture__ibg-image
+  &__ibg-image {
+    padding-bottom: 33.1325%;
+  }
+  // .common-picture__ibg-pic
+  &__ibg-pic {
   }
 }

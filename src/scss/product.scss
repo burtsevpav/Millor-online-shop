@@ -245,12 +245,23 @@
 }
 // Блок 4
 .title-text-common {
-  @include adaptiveValue("padding-top", 50, 30);
-  @include adaptiveValue("padding-bottom", 100, 30);
-  border: 1px solid #b3b3b3;
-
+  @include adaptiveValue("padding-bottom", 50, 30, 1660, 1370, 1);
+  // .title-text-common_border
+  &_border {
+    border: 1px solid #b3b3b3;
+    @include adaptiveValue("padding-top", 50, 30);
+  }
   // .title-text-common__container
   &__container {
+  }
+  // .title-text-common__items
+  &__items {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 50, 20);
+    }
+  }
+  // .title-text-common__content
+  &__content {
   }
   // .title-text-common__title
   &__title {
@@ -260,7 +271,13 @@
   }
   // .title-text-common__text
   &__text {
-    max-width: rem(1100);
+    &:not(:last-child) {
+      @include adaptiveValue("padding-bottom", 30, 10);
+    }
+    // .title-text-common__text_width
+    &_width {
+      max-width: rem(1100);
+    }
   }
 }
 // Блок 5
