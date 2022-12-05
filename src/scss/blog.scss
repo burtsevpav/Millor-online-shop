@@ -124,3 +124,47 @@
   &__ibg-pic {
   }
 }
+// Блок новости
+.items-news {
+  @include adaptiveValue("padding-bottom", 100, 50);
+  // .items-news__container
+  &__container {
+  }
+  // .items-news__head
+  &__head {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: rem(20);
+    @include adaptiveValue("column-gap", 100, 30, 1660, 1370, 1);
+    @include adaptiveValue("padding-top", 50, 20);
+    @include adaptiveValue("padding-bottom", 50, 20);
+    .common-nav {
+      flex: 1 1 auto;
+    }
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+  // .items-news__title
+  &__title {
+  }
+  // .items-news__body
+  &__body {
+  }
+  // .items-news__content
+  &__content {
+    margin-left: rem(-10);
+    margin-right: rem(-10);
+  }
+  // .items-news__item
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    // padding-top: rem(25);
+    // padding-bottom: rem(25);
+    @include adaptiveValue("padding-left", 20, 10);
+    @include adaptiveValue("padding-right", 20, 10);
+    @include adaptiveValue("padding-top", 25, 20, 480, 320, 1);
+    @include adaptiveValue("padding-bottom", 25, 20, 480, 320, 1);
+  }
+}
