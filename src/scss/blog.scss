@@ -160,8 +160,6 @@
   &__item {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    // padding-top: rem(25);
-    // padding-bottom: rem(25);
     @include adaptiveValue("padding-left", 20, 10);
     @include adaptiveValue("padding-right", 20, 10);
     @include adaptiveValue("padding-top", 25, 20, 480, 320, 1);

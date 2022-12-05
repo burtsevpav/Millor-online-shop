@@ -19,7 +19,7 @@
 // Общий текст
 .text {
   font-weight: 500;
-  @include adaptiveValue("font-size", 25, 16);
+  @include adaptiveValue("font-size", 25, 18, 1660, 1370, 1);
   line-height: 130%;
 }
 
