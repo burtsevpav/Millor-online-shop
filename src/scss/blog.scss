@@ -126,7 +126,7 @@
 }
 // Блок новости
 .items-news {
-  @include adaptiveValue("padding-bottom", 100, 50);
+  @include adaptiveValue("padding-bottom", 100, 20, 1660, 992, 1);
   // .items-news__container
   &__container {
   }
@@ -136,7 +136,7 @@
     flex-wrap: wrap;
     row-gap: rem(20);
     @include adaptiveValue("column-gap", 100, 30, 1660, 1370, 1);
-    @include adaptiveValue("padding-top", 50, 20);
+    @include adaptiveValue("padding-top", 50, 20, 1660, 992, 1);
     @include adaptiveValue("padding-bottom", 50, 20);
     .common-nav {
       flex: 1 1 auto;
@@ -164,5 +164,76 @@
     @include adaptiveValue("padding-right", 20, 10);
     @include adaptiveValue("padding-top", 25, 20, 480, 320, 1);
     @include adaptiveValue("padding-bottom", 25, 20, 480, 320, 1);
+  }
+}
+// Блок вопросы (со спойлерами)
+.questions {
+  @include adaptiveValue("padding-top", 50, 10);
+  background: url("../img/main/points-picture/all-bg.svg") 0 0 / 100% no-repeat;
+  position: relative;
+
+  // .questions__container
+  &__container {
+    display: flex;
+    @include adaptiveValue("column-gap", 60, 20);
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+  // .questions__head
+  &__head {
+    @include adaptiveValue("padding-top", 50, 25);
+    @include adaptiveValue("padding-bottom", 50, 25);
+  }
+  // .questions__title
+  &__title {
+    @include adaptiveValue("margin-bottom", 60, 50);
+    @media (max-width: $mobile) {
+      margin-bottom: 0;
+    }
+  }
+  // .questions__body
+  &__body {
+    background: #fff7e1;
+    @include adaptiveValue("padding-bottom", 40, 10);
+  }
+  // .questions__picture
+  &__picture {
+    flex: 1 1 40.5%;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 90%;
+      height: 90%;
+      top: 0;
+      left: 0;
+      background: url("../img/main/points-picture/coffee.png") 0 0 / 100% no-repeat;
+      z-index: 3;
+    }
+    @media (max-width: $mobile) {
+      width: 60%;
+      height: 60%;
+      align-self: center;
+    }
+  }
+  // .questions__ibg-image
+  &__ibg-image {
+    padding-bottom: 86.1111%;
+  }
+  // .questions__ibg-pic
+  &__ibg-pic {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -20%;
+    left: 30%;
+  }
+  // .questions__content
+  &__content {
+    flex: 1 1 59.5%;
+    @media (max-width: $mobile) {
+      padding-bottom: rem(20);
+    }
   }
 }
