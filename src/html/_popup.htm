@@ -6,10 +6,11 @@
   </div>
 </div>
 <!-- Popup для формы регистрации-->
-<div id="form-personal-area" aria-hidden="true" class="popup">
+<div id="form-registration" aria-hidden="true" class="popup">
   <div class="popup__wrapper">
     <div class="popup__content">
       <div class="popup__left left-popup">
+        <button data-close type="button" class="right-popup__close right-popup__close_display-one"></button>
         <div class="left-popup__picture">
           <div class="left-popup__ibg-image">
             <img src="../img/main/hero/grain.png" alt="Кофе" class="left-popup__ibg-pic" />
@@ -19,16 +20,16 @@
           <h4 class="left-popup__title">Добро пожаловать!</h4>
           <p class="left-popup__subtitle">Уже есть аккаунт?</p>
         </div>
-        <button class="left-popup__button">Войти</button>
+        <button type="button" data-popup="#form-entrance" class="left-popup__button">Войти</button>
       </div>
       <div class="popup__right right-popup">
-        <button data-da=".left-popup,660,0" data-close type="button" class="right-popup__close"></button>
+        <button data-close type="button" class="right-popup__close right-popup__close_display-two"></button>
         <div class="right-popup__logo">
           <img src="../img/popup/logo.svg" alt="Логотип" class="right-popup__logotype" />
         </div>
         <h3 class="right-popup__title">Регистрация</h3>
         <p class="right-popup__text">Зарегистрируйтесь на сайте, чтобы первым получать скидки и узнавать акционные предложения!</p>
-        <form action="#" class="right-popup__form form-popup">
+        <form class="right-popup__form form-popup">
           <div class="form-popup__item">
             <input
               data-validate
@@ -59,8 +60,142 @@
               class="form-popup__input input"
             />
           </div>
-          <button class="form-popup__button">Зарегистрироваться</button>
+          <button type="submit" class="form-popup__button">Зарегистрироваться</button>
         </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Popup для формы входа-->
+<div id="form-entrance" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__left left-popup">
+        <button data-close type="button" class="right-popup__close right-popup__close_display-one"></button>
+        <div class="left-popup__picture">
+          <div class="left-popup__ibg-image">
+            <img src="../img/main/hero/grain.png" alt="Кофе" class="left-popup__ibg-pic" />
+          </div>
+        </div>
+        <div class="left-popup__body">
+          <h4 class="left-popup__title">Регистрация</h4>
+          <p class="left-popup__subtitle">Получайте скидки первым!</p>
+        </div>
+        <button type="button" data-popup="#form-registration" class="left-popup__button">Зарегистрироваться</button>
+      </div>
+      <div class="popup__right right-popup">
+        <button data-close type="button" class="right-popup__close right-popup__close_display-two"></button>
+        <div class="right-popup__logo">
+          <img src="../img/popup/logo.svg" alt="Логотип" class="right-popup__logotype" />
+        </div>
+        <h3 class="right-popup__title">Войти в личный кабинет</h3>
+        <form action="#" class="right-popup__form form-popup">
+          <div class="form-popup__item">
+            <input data-validate data-required autocomplete="off" type="email" name="emailOne" data-error="Введите email!" placeholder="Email" class="form-popup__input input" />
+          </div>
+          <div class="form-popup__item">
+            <input
+              data-validate
+              data-required
+              autocomplete="off"
+              type="password"
+              name="passwordlOne"
+              data-error="Введите пароль!"
+              placeholder="Придумайте пароль"
+              class="form-popup__input input"
+            />
+          </div>
+          <button type="submit" class="form-popup__button">Войти</button>
+        </form>
+        <div class="form-popup__btn button-two button-two_font">
+          <span><a href="#" data-popup="#form-password-one">Забыли пароль?</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Popup для формы забыл пароль, шаг 1-->
+<div id="form-password-one" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__left left-popup">
+        <button data-close type="button" class="right-popup__close right-popup__close_display-one"></button>
+        <div class="left-popup__picture">
+          <div class="left-popup__ibg-image">
+            <img src="../img/main/hero/grain.png" alt="Кофе" class="left-popup__ibg-pic" />
+          </div>
+        </div>
+        <div class="left-popup__body">
+          <h4 class="left-popup__title">Регистрация</h4>
+          <p class="left-popup__subtitle">Получайте скидки первым!</p>
+        </div>
+        <button type="button" data-popup="#form-registration" class="left-popup__button">Зарегистрироваться</button>
+      </div>
+      <div class="popup__right right-popup">
+        <button data-close type="button" class="right-popup__close right-popup__close_display-two"></button>
+        <div class="right-popup__logo">
+          <img src="../img/popup/logo.svg" alt="Логотип" class="right-popup__logotype" />
+        </div>
+        <h3 class="right-popup__title">Забыли пароль?</h3>
+        <p class="right-popup__text">Введите вашу почту и мы пришлем вам проверочный код на почту</p>
+        <form action="#" class="right-popup__form form-popup">
+          <div class="form-popup__item">
+            <input data-validate data-required autocomplete="off" type="email" name="emailOne" data-error="Введите email!" placeholder="Email" class="form-popup__input input" />
+          </div>
+          <button type="submit" data-popup="#form-password-two" class="form-popup__button">Получить код</button>
+        </form>
+        <div class="form-popup__btn button-two button-two_font">
+          <span><a href="#" data-popup="#form-entrance">На страницу входа</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Popup для формы забыл пароль, шаг 2-->
+<div id="form-password-two" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__left left-popup">
+        <button data-close type="button" class="right-popup__close right-popup__close_display-one"></button>
+        <div class="left-popup__picture">
+          <div class="left-popup__ibg-image">
+            <img src="../img/main/hero/grain.png" alt="Кофе" class="left-popup__ibg-pic" />
+          </div>
+        </div>
+        <div class="left-popup__body">
+          <h4 class="left-popup__title">Регистрация</h4>
+          <p class="left-popup__subtitle">Получайте скидки первым!</p>
+        </div>
+        <button type="button" data-popup="#form-registration" class="left-popup__button">Зарегистрироваться</button>
+      </div>
+      <div class="popup__right right-popup">
+        <button data-close type="button" class="right-popup__close right-popup__close_display-two"></button>
+        <div class="right-popup__logo">
+          <img src="../img/popup/logo.svg" alt="Логотип" class="right-popup__logotype" />
+        </div>
+        <h3 class="right-popup__title">Забыли пароль?</h3>
+        <p class="right-popup__text">Мы выслали вам на почту проверочный код. Введите его и ниже и придумайте новый пароль</p>
+        <form action="#" class="right-popup__form form-popup">
+          <div class="form-popup__item">
+            <input data-validate data-required autocomplete="off" type="text" name="codeOne" data-error="Введите код!" placeholder="Введите код" class="form-popup__input input" />
+          </div>
+          <div class="form-popup__item">
+            <input
+              data-validate
+              data-required
+              autocomplete="off"
+              type="password"
+              name="passwordlOne"
+              data-error="Введите новый пароль!"
+              placeholder="Введите новый пароль"
+              class="form-popup__input input"
+            />
+          </div>
+          <button type="submit" class="form-popup__button">Обновить пароль</button>
+        </form>
+        <div class="form-popup__btn button-two button-two_font">
+          <span><a href="#" data-popup="#form-password-one">Отправить код повторно</a></span>
+        </div>
       </div>
     </div>
   </div>

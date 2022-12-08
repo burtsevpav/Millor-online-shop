@@ -382,6 +382,11 @@
   font-weight: 500;
   @include adaptiveValue("font-size", 20, 18);
   line-height: math.div(24, 20);
+  // .button-two_font
+  &_font {
+    @include adaptiveValue("font-size", 20, 16);
+  }
+
   span {
     border-bottom: 1px solid $mainColor;
     transition: all 0.2s ease 0s;

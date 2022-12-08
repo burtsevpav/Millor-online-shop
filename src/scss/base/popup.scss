@@ -187,12 +187,12 @@ body::after {
     color: #ffffff;
     border: 2px solid #ffffff;
     border-radius: 5px;
-    @include adaptiveValue("padding", 20, 10, 1660, 768, 1);
+    @include adaptiveValue("padding-top", 20, 10, 1660, 768, 1);
+    @include adaptiveValue("padding-bottom", 20, 10, 1660, 768, 1);
+    @include adaptiveValue("padding-left", 40, 30, 1660, 768, 1);
+    @include adaptiveValue("padding-right", 40, 30, 1660, 768, 1);
     transition: all 0.2s ease 0s;
     text-align: center;
-    @media (max-width: em(660)) {
-      width: 60%;
-    }
     @media (any-hover: hover) {
       &:hover {
         background: #e2a300;
@@ -223,6 +223,19 @@ body::after {
       flex: 0 0 30px;
       width: 30px;
     }
+    @media (min-width: em(660)) {
+      // .right-popup__close_display-one
+      &_display-one {
+        display: none;
+      }
+    }
+    @media (max-width: em(660)) {
+      // .right-popup__close_display-two
+      &_display-two {
+        display: none;
+      }
+    }
+
     &::before,
     &::after {
       content: "";
@@ -278,7 +291,10 @@ body::after {
 }
 .form-popup {
   width: 80%;
-  @media (max-width: $mobileSmall) {
+  &:not(:last-child) {
+    @include adaptiveValue(" margin-bottom", 20, 15);
+  }
+  @media (max-width: $mobile) {
     width: 100%;
   }
   // .form-popup__item
@@ -318,5 +334,8 @@ body::after {
         background: #e2a300;
       }
     }
+  }
+  // .form-popup__btn
+  &__btn {
   }
 }
