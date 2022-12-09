@@ -401,6 +401,7 @@
 
 // Общий блок для формы отправки почты
 .subscribe {
+  margin-top: rem(-3);
   @include adaptiveValue("padding-bottom", 80, 30);
   // .subscribe_bg
   &_bg {
@@ -485,6 +486,7 @@
     color: #5b5b5b;
     span {
       color: $mainElementColor;
+      position: relative;
     }
   }
   // .subscribe__picture
