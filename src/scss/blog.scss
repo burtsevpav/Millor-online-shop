@@ -36,6 +36,14 @@
 }
 .common-items {
   @include adaptiveValue("margin-bottom", 90, 20, 1660, 1370, 1);
+  // .common-items_padding
+  &_padding {
+    @include adaptiveValue("padding-top", 40, 20, 1660, 768, 1);
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0;
+  }
+
   // .common-items__container
   &__container {
     display: grid;
@@ -61,6 +69,10 @@
     @media (max-width: em(580)) {
       grid-template-columns: repeat(2, 1fr);
     }
+    // .common-items__container_position
+    &_position {
+      position: relative;
+    }
   }
 }
 .item-common {
@@ -69,7 +81,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: rem(25);
+  @include adaptiveValue("padding", 25, 20);
   padding-bottom: rem(40);
   background: #ffffff;
   box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
@@ -86,6 +98,7 @@
       background: #e2a300;
     }
   }
+
   // .item-common__title
   &__title {
     flex: 1 1 auto;

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/_head.htm',{ "title":"Чай и кофейные напитки" })
+  @@include('html/_head.htm',{ "title":"Свежеобжаренный кофе" })
   <body>
     <div class="wrapper">
       @@include('html/_header.htm',{})
       <main class="page">
-        <section class="hero-cards">
+        <section class="hero-cards hero-cards_padding">
           <div class="hero-cards__head head-cards-hero">
             <div class="head-cards-hero__container">
               <div class="head-cards-hero__content">
@@ -17,73 +17,76 @@
                     <a href="index.html" class="head-cards-hero__link">• Каталог товаров</a>
                   </li>
                   <li class="head-cards-hero__item">
-                    <a href="tea.html" class="head-cards-hero__link">• Чай и кофейные напитки</a>
+                    <a href="coffee.html" class="head-cards-hero__link">• Свежеобжаренный кофе</a>
                   </li>
                 </ul>
-                <h1 class="head-cards-hero__title title-main">Чай и кофейные напитки</h1>
-                <p class="head-cards-hero__text">Чай напрямую из плантаций с Китая и кофейные напитки на основе кофе (какао и кофе растворимый).</p>
+                <h1 class="head-cards-hero__title title-main">Свежеобжаренный кофе</h1>
+                <p class="head-cards-hero__text">
+                  Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и
+                  растворимой продукции более 15 лет.
+                </p>
               </div>
-              <div class="head-cards-hero__picture">
+              <div class="head-cards-hero__picture head-cards-hero__picture_bg">
                 <div class="head-cards-hero__ibg-image">
-                  <img src="@img/tea/hero-tea/teapot.png" alt="Чай" class="head-cards-hero__ibg-pic" />
+                  <img src="@img/main/hero/grain.png" alt="Кофе" class="head-cards-hero__ibg-pic head-cards-hero__ibg-pic_coffee" />
                 </div>
               </div>
             </div>
           </div>
-          <div class="hero-cards__body body-cards-hero">
-            <div class="body-cards-hero__container">
-              <a href="" class="cards-hero-item">
-                <div class="cards-hero-item__image">
-                  <img src="@img/tea/hero-tea/black-tea.jpg" alt="Чай" class="cards-hero-item__img" />
+          <div class="common-items common-items_padding">
+            <div class="common-items__container common-items__container_position">
+              <a href="" class="item-common">
+                <h5 class="item-common__title">Турка</h5>
+                <div class="item-common__image">
+                  <img src="@img/blog/cezve.svg" alt="Турка" class="item-common__img" />
                 </div>
-                <h4 class="cards-hero-item__title">Черный чай</h4>
               </a>
-              <a href="" class="cards-hero-item">
-                <div class="cards-hero-item__image">
-                  <img src="@img/tea/hero-tea/green-tea.jpg" alt="Чай" class="cards-hero-item__img" />
+              <a href="" class="item-common">
+                <h5 class="item-common__title">Френч-пресс</h5>
+                <div class="item-common__image">
+                  <img src="@img/blog/french-press.svg" alt="Френч-пресс" class="item-common__img" />
                 </div>
-                <h4 class="cards-hero-item__title">Зеленый чай</h4>
               </a>
-              <a href="" class="cards-hero-item">
-                <div class="cards-hero-item__image">
-                  <img src="@img/tea/hero-tea/oolong.jpg" alt="Чай" class="cards-hero-item__img" />
+              <a href="" class="item-common">
+                <h5 class="item-common__title">Мока</h5>
+                <div class="item-common__image">
+                  <img src="@img/blog/moka.svg" alt="Мока" class="item-common__img" />
                 </div>
-                <h4 class="cards-hero-item__title">Молочный улунг</h4>
               </a>
-              <a href="" class="cards-hero-item">
-                <div class="cards-hero-item__image">
-                  <img src="@img/tea/hero-tea/black-tea.jpg" alt="Чай" class="cards-hero-item__img" />
+              <a href="" class="item-common">
+                <h5 class="item-common__title">Эспрессо</h5>
+                <div class="item-common__image">
+                  <img src="@img/blog/espresso.svg" alt="Эспрессо" class="item-common__img" />
                 </div>
-                <h4 class="cards-hero-item__title">Разный чай</h4>
               </a>
-              <a href="" class="cards-hero-item">
-                <div class="cards-hero-item__image">
-                  <img src="@img/tea/hero-tea/green-tea.jpg" alt="Чай" class="cards-hero-item__img" />
+              <a href="" class="item-common">
+                <h5 class="item-common__title">Воронка</h5>
+                <div class="item-common__image">
+                  <img src="@img/blog/funnel.svg" alt="Воронка" class="item-common__img" />
                 </div>
-                <h4 class="cards-hero-item__title">Травяной чай</h4>
               </a>
-              <a href="" class="cards-hero-item">
-                <div class="cards-hero-item__image">
-                  <img src="@img/tea/hero-tea/green-tea.jpg" alt="Чай" class="cards-hero-item__img" />
+              <a href="" class="item-common">
+                <h5 class="item-common__title">Аэропресс</h5>
+                <div class="item-common__image">
+                  <img src="@img/blog/aeropress.svg" alt="Аэропресс" class="item-common__img" />
                 </div>
-                <h4 class="cards-hero-item__title">Матча</h4>
               </a>
-              <a href="" class="cards-hero-item">
-                <div class="cards-hero-item__image">
-                  <img src="@img/tea/hero-tea/oolong.jpg" alt="Чай" class="cards-hero-item__img" />
+              <a href="" class="item-common">
+                <h5 class="item-common__title">Чашка</h5>
+                <div class="item-common__image">
+                  <img src="@img/blog/cup.svg" alt="Чашка" class="item-common__img" />
                 </div>
-                <h4 class="cards-hero-item__title">Пуэр</h4>
               </a>
-              <a href="" class="cards-hero-item">
-                <div class="cards-hero-item__image">
-                  <img src="@img/tea/hero-tea/cappuccino.jpg" alt="Чай" class="cards-hero-item__img" />
+              <a href="" class="item-common">
+                <h5 class="item-common__title">Автомат</h5>
+                <div class="item-common__image">
+                  <img src="@img/blog/auto.svg" alt="Автомат" class="item-common__img" />
                 </div>
-                <h4 class="cards-hero-item__title">Кофейные напитки</h4>
               </a>
             </div>
           </div>
         </section>
-        <section class="assortment">
+        <section class="assortment assortment_bg-color">
           <div class="assortment__container">
             <div class="assortment__head">
               <div class="assortment__button button-two">
