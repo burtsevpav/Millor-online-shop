@@ -250,6 +250,12 @@
     border: 1px solid #b3b3b3;
     @include adaptiveValue("padding-top", 50, 30);
   }
+  // .title-text-common_border-bottom
+  &_border-bottom {
+    border-bottom: 1px solid #b3b3b3;
+    @include adaptiveValue("padding-top", 50, 30);
+  }
+
   // .title-text-common__container
   &__container {
   }
@@ -413,5 +419,35 @@
   // .item-reviews__location
   &__location {
     font-weight: 500;
+  }
+}
+
+// Стили для product-coffee
+.product-item {
+  // .product-item__elements
+  &__elements {
+    display: flex;
+    flex-wrap: wrap;
+    @include adaptiveValue("column-gap", 25, 15);
+    @include adaptiveValue("row-gap", 25, 15);
+    justify-content: space-between;
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 70, 40, 1660, 992, 1);
+    }
+  }
+  // .product-item__element
+  &__element {
+    display: flex;
+    flex-direction: column;
+  }
+  // .product-item__compound
+  &__compound {
+    font-weight: 700;
+    line-height: math.div(24, 20);
+    @include adaptiveValue("font-size", 20, 18);
+  }
+  // .product-item__points
+  &__points {
+    color: #f9b300;
   }
 }
