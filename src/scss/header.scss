@@ -105,7 +105,7 @@
   // .menu__body
   &__body {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     @media (max-width: $mobile) {
       position: fixed;
       width: 100%;
@@ -188,7 +188,7 @@
   // .user-header__item
   &__item {
     position: relative;
-    z-index: 2;
+    z-index: 3;
   }
   // .user-header__search
   &__search {
