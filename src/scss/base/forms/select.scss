@@ -1,11 +1,17 @@
 // <SELECT>
 // Снипет (HTML): sel
+
+.some-block {
+  max-width: rem(400);
+}
+
 .select {
   grid-column-start: 2;
   grid-column-end: 2;
   min-width: rem(180);
   position: relative;
   @include adaptiveValue("margin-bottom", 15, 10);
+
   // .select__body
   &__body {
     position: relative;
@@ -26,6 +32,7 @@
     @include adaptiveValue("padding-left", 17, 10);
     @include adaptiveValue("font-size", 25, 20);
   }
+
   // .select__value
   // &__value {
   //   display: flex;

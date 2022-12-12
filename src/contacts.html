@@ -45,35 +45,7 @@
             </div>
           </div>
         </section>
-        <section class="subscribe subscribe_bg subscribe_bg-two">
-          <div class="subscribe__container">
-            <div class="subscribe__body">
-              <h2 class="subscribe__title title">Подписка на новости и рассылку</h2>
-              <p class="subscribe__subtitle">Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных предложений.</p>
-              <form data-popup-message="#form-message" data-dev method="post" action="#" class="subscribe__form form-subscribe">
-                <input
-                  data-validate
-                  data-required
-                  autocomplete="off"
-                  type="email"
-                  name="inputTwo"
-                  data-error="Введите E-mail!"
-                  placeholder="Ваш email"
-                  class="form-subscribe__input input"
-                />
-                <button type="submit" class="form-subscribe__button">Подписаться</button>
-              </form>
-              <div class="subscribe__text">
-                Нажимая на кнопку “Подписаться”, вы принимаете правила <span><a href="">пользовательского соглашения</a></span>
-              </div>
-            </div>
-            <div data-da=".subscribe__body,660,2" class="subscribe__picture">
-              <div class="subscribe__ibg-image">
-                <img src="../img/main/hero/grain.png" alt="Кофе" class="subscribe__ibg-pic" />
-              </div>
-            </div>
-          </div>
-        </section>
+        <section class="subscribe subscribe_bg subscribe_bg-two">@@include('html/_subscribe.htm',{})</section>
       </main>
       @@include('html/_footer.htm',{})
     </div>

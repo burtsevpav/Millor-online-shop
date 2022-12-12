@@ -150,6 +150,7 @@
 
   // .body-cards-hero__container
   &__container {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;

@@ -1,0 +1,48 @@
+// Стили для страницы ошибки 404
+.header-hide {
+  display: none;
+}
+
+.page {
+}
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  // .error-page__items
+  &__items {
+    padding: rem(20);
+  }
+
+  // .error-page__title
+  &__title {
+    @include adaptiveValue("font-size", 100, 80);
+    font-weight: 500;
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 15, 10);
+    }
+  }
+  // .error-page__subtitle
+  &__subtitle {
+    @include adaptiveValue("font-size", 40, 30);
+    font-weight: 500;
+    line-height: 1.2;
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 15, 10);
+    }
+  }
+  // .error-page__text
+  &__text {
+    @include adaptiveValue("font-size", 20, 16);
+    font-weight: 500;
+    line-height: 1.5;
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 15, 10);
+    }
+  }
+  // .error-page__button
+  &__button {
+  }
+}
