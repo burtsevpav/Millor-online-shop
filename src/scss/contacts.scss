@@ -31,6 +31,7 @@
   }
   // .contacts__text
   &__text {
+    display: block;
     font-weight: 500;
     @include adaptiveValue("font-size", 20, 18);
     line-height: 130%;
