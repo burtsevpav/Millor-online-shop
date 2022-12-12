@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Контакты</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221212203514">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__elements common-elements">
+					<a href="index.html" class="common-elements__logo">
+						<picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="Логотип" class="common-elements__logotype" /></picture>
+					</a>
+					<div class="common-elements__items">
+						<div class="common-elements__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="index.html" class="menu__link">Главная</a>
+									</li>
+									<li class="menu__item">
+										<a href="blog.html" class="menu__link">Блог</a>
+									</li>
+									<li class="menu__item">
+										<a href="contacts.html" class="menu__link">Контакты</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="common-elements__user user-header">
+							<div class="user-header__item">
+								<a href="" class="user-header__search _icon-search"></a>
+							</div>
+							<div class="user-header__item">
+								<a href="error.html" class="user-header__cart _icon-cart"></a>
+							</div>
+							<div class="user-header__item">
+								<a href="#" data-popup="#form-registration" class="user-header__login _icon-login"></a>
+							</div>
+						</div>
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<form action="#" class="form-header">
+							<div class="form-header__items">
+								<input autocomplete="off" type="text" name="inputOne" data-error="Ошибка" placeholder="Поиск" class="form-header__input input" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<div class="page-nav">
+				<div class="page-nav__container">
+					<ul class="page-nav__list">
+						<li class="page-nav__item">
+							<a href="index.html" class="page-nav__link">Главная</a>
+						</li>
+						<li class="page-nav__item">
+							<a href="contacts.html" class="page-nav__link">• Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<section class="contacts">
+				<div class="contacts__container">
+					<div class="contacts__content">
+						<div class="contacts__item">
+							<h3 class="contacts__title">Связаться с нами:</h3>
+							<a href="tel:84012375343" class="contacts__text">+7 (401) 237 53 43</a>
+							<p class="contacts__text">Import@kldrefine.com</p>
+						</div>
+						<div class="contacts__item">
+							<h3 class="contacts__title">Юридический адрес:</h3>
+							<p class="contacts__text">Российская, Федерация, 238310, Калининградская область, Гурьевский район, поселок Васильково, улица Шатурская, дом 4А</p>
+						</div>
+						<div class="contacts__item">
+							<h3 class="contacts__title">Адрес склада:</h3>
+							<p class="contacts__text">Московская область, Балашиха, Западная промзона, Шоссе энтузиастов 1</p>
+						</div>
+					</div>
+					<div class="contacts__map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2303.282922206819!2d20.578661915767597!3d54.739827077122776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e315b38eec664d%3A0x8585846aae8995ce!2z0YPQuy4g0KjQsNGC0YPRgNGB0LrQsNGPLCA00JAsINCS0LDRgdC40LvRjNC60L7QstC-LCDQmtCw0LvQuNC90LjQvdCz0YDQsNC00YHQutCw0Y8g0L7QsdC7LiwgMjM4MzI0!5e0!3m2!1sru!2sru!4v1670494802938!5m2!1sru!2sru" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+			</section>
+			<section class="subscribe subscribe_bg subscribe_bg-two">
+				<div class="subscribe__container">
+					<div class="subscribe__body">
+						<h2 class="subscribe__title title">Подписка на новости и рассылку</h2>
+						<p class="subscribe__subtitle">Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных предложений.</p>
+						<form data-popup-message="#form-message" data-dev method="post" action="#" class="subscribe__form form-subscribe">
+							<input data-validate data-required autocomplete="off" type="email" name="inputTwo" data-error="Введите E-mail!" placeholder="Ваш email" class="form-subscribe__input input" />
+							<button type="submit" class="form-subscribe__button">Подписаться</button>
+						</form>
+						<div class="subscribe__text">
+							Нажимая на кнопку “Подписаться”, вы принимаете правила <span><a href="error.html">пользовательского соглашения</a></span>
+						</div>
+					</div>
+					<div data-da=".subscribe__body,660,2" class="subscribe__picture">
+						<div class="subscribe__ibg-image">
+							<picture><source srcset="img/main/hero/grain.webp" type="image/webp"><img src="img/main/hero/grain.png" alt="Кофе" class="subscribe__ibg-pic" /></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__elements common-elements">
+					<a href="" class="common-elements__logo">
+						<picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="Логотип" class="common-elements__logotype" /></picture>
+					</a>
+					<div class="common-elements__items">
+						<div class="common-elements__menu menu-footer">
+							<nav class="menu-footer__content">
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item">
+										<a href="index.html" class="menu-footer__link">Главная</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="blog.html" class="menu-footer__link">Блог</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="contacts.html" class="menu-footer__link">Контакты</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<div id="form-message" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup__content_form">
+				<div class="popup__text popup__text_form">Спасибо за подписку!</div>
+			</div>
+		</div>
+	</div>
+	<!-- Popup для формы регистрации-->
+	<div id="form-registration" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__left left-popup">
+					<button data-close type="button" class="right-popup__close right-popup__close_display-one"></button>
+					<div class="left-popup__picture">
+						<div class="left-popup__ibg-image">
+							<picture><source srcset="img/main/hero/grain.webp" type="image/webp"><img src="img/main/hero/grain.png" alt="Кофе" class="left-popup__ibg-pic" /></picture>
+						</div>
+					</div>
+					<div class="left-popup__body">
+						<h4 class="left-popup__title">Добро пожаловать!</h4>
+						<p class="left-popup__subtitle">Уже есть аккаунт?</p>
+					</div>
+					<button type="button" data-popup="#form-entrance" class="left-popup__button">Войти</button>
+				</div>
+				<div class="popup__right right-popup">
+					<button data-close type="button" class="right-popup__close right-popup__close_display-two"></button>
+					<div class="right-popup__logo">
+						<img src="img/popup/logo.svg" alt="Логотип" class="right-popup__logotype" />
+					</div>
+					<h3 class="right-popup__title">Регистрация</h3>
+					<p class="right-popup__text">Зарегистрируйтесь на сайте, чтобы первым получать скидки и узнавать акционные предложения!</p>
+					<form class="right-popup__form form-popup">
+						<div class="form-popup__item">
+							<input data-validate data-required autocomplete="off" type="text" name="nameOne" data-error="Введите имя!" placeholder="Имя и фамилия" class="form-popup__input input" />
+						</div>
+						<div class="form-popup__item">
+							<input data-validate data-required autocomplete="off" type="email" name="emailOne" data-error="Введите email!" placeholder="Email" class="form-popup__input input" />
+						</div>
+						<div class="form-popup__item">
+							<input data-validate data-required autocomplete="off" type="tel" name="telOne" data-error="Введите телефон!" placeholder="Телефон" class="form-popup__input input" />
+						</div>
+						<div class="form-popup__item">
+							<input data-validate data-required autocomplete="off" type="password" name="passwordlOne" data-error="Введите пароль!" placeholder="Придумайте пароль" class="form-popup__input input" />
+						</div>
+						<button type="submit" class="form-popup__button">Зарегистрироваться</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Popup для формы входа-->
+	<div id="form-entrance" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__left left-popup">
+					<button data-close type="button" class="right-popup__close right-popup__close_display-one"></button>
+					<div class="left-popup__picture">
+						<div class="left-popup__ibg-image">
+							<picture><source srcset="img/main/hero/grain.webp" type="image/webp"><img src="img/main/hero/grain.png" alt="Кофе" class="left-popup__ibg-pic" /></picture>
+						</div>
+					</div>
+					<div class="left-popup__body">
+						<h4 class="left-popup__title">Регистрация</h4>
+						<p class="left-popup__subtitle">Получайте скидки первым!</p>
+					</div>
+					<button type="button" data-popup="#form-registration" class="left-popup__button">Зарегистрироваться</button>
+				</div>
+				<div class="popup__right right-popup">
+					<button data-close type="button" class="right-popup__close right-popup__close_display-two"></button>
+					<div class="right-popup__logo">
+						<img src="img/popup/logo.svg" alt="Логотип" class="right-popup__logotype" />
+					</div>
+					<h3 class="right-popup__title">Войти в личный кабинет</h3>
+					<form action="#" class="right-popup__form form-popup">
+						<div class="form-popup__item">
+							<input data-validate data-required autocomplete="off" type="email" name="emailOne" data-error="Введите email!" placeholder="Email" class="form-popup__input input" />
+						</div>
+						<div class="form-popup__item">
+							<input data-validate data-required autocomplete="off" type="password" name="passwordlOne" data-error="Введите пароль!" placeholder="Придумайте пароль" class="form-popup__input input" />
+						</div>
+						<button type="submit" class="form-popup__button">Войти</button>
+					</form>
+					<div class="form-popup__btn button-two button-two_font">
+						<span><a href="#" data-popup="#form-password-one">Забыли пароль?</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Popup для формы забыл пароль, шаг 1-->
+	<div id="form-password-one" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__left left-popup">
+					<button data-close type="button" class="right-popup__close right-popup__close_display-one"></button>
+					<div class="left-popup__picture">
+						<div class="left-popup__ibg-image">
+							<picture><source srcset="img/main/hero/grain.webp" type="image/webp"><img src="img/main/hero/grain.png" alt="Кофе" class="left-popup__ibg-pic" /></picture>
+						</div>
+					</div>
+					<div class="left-popup__body">
+						<h4 class="left-popup__title">Регистрация</h4>
+						<p class="left-popup__subtitle">Получайте скидки первым!</p>
+					</div>
+					<button type="button" data-popup="#form-registration" class="left-popup__button">Зарегистрироваться</button>
+				</div>
+				<div class="popup__right right-popup">
+					<button data-close type="button" class="right-popup__close right-popup__close_display-two"></button>
+					<div class="right-popup__logo">
+						<img src="img/popup/logo.svg" alt="Логотип" class="right-popup__logotype" />
+					</div>
+					<h3 class="right-popup__title">Забыли пароль?</h3>
+					<p class="right-popup__text">Введите вашу почту и мы пришлем вам проверочный код на почту</p>
+					<form action="#" class="right-popup__form form-popup">
+						<div class="form-popup__item">
+							<input data-validate data-required autocomplete="off" type="email" name="emailOne" data-error="Введите email!" placeholder="Email" class="form-popup__input input" />
+						</div>
+						<button type="submit" data-popup="#form-password-two" class="form-popup__button">Получить код</button>
+					</form>
+					<div class="form-popup__btn button-two button-two_font">
+						<span><a href="#" data-popup="#form-entrance">На страницу входа</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Popup для формы забыл пароль, шаг 2-->
+	<div id="form-password-two" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__left left-popup">
+					<button data-close type="button" class="right-popup__close right-popup__close_display-one"></button>
+					<div class="left-popup__picture">
+						<div class="left-popup__ibg-image">
+							<picture><source srcset="img/main/hero/grain.webp" type="image/webp"><img src="img/main/hero/grain.png" alt="Кофе" class="left-popup__ibg-pic" /></picture>
+						</div>
+					</div>
+					<div class="left-popup__body">
+						<h4 class="left-popup__title">Регистрация</h4>
+						<p class="left-popup__subtitle">Получайте скидки первым!</p>
+					</div>
+					<button type="button" data-popup="#form-registration" class="left-popup__button">Зарегистрироваться</button>
+				</div>
+				<div class="popup__right right-popup">
+					<button data-close type="button" class="right-popup__close right-popup__close_display-two"></button>
+					<div class="right-popup__logo">
+						<img src="img/popup/logo.svg" alt="Логотип" class="right-popup__logotype" />
+					</div>
+					<h3 class="right-popup__title">Забыли пароль?</h3>
+					<p class="right-popup__text">Мы выслали вам на почту проверочный код. Введите его и ниже и придумайте новый пароль</p>
+					<form action="#" class="right-popup__form form-popup">
+						<div class="form-popup__item">
+							<input data-validate data-required autocomplete="off" type="text" name="codeOne" data-error="Введите код!" placeholder="Введите код" class="form-popup__input input" />
+						</div>
+						<div class="form-popup__item">
+							<input data-validate data-required autocomplete="off" type="password" name="passwordlOne" data-error="Введите новый пароль!" placeholder="Введите новый пароль" class="form-popup__input input" />
+						</div>
+						<button type="submit" class="form-popup__button">Обновить пароль</button>
+					</form>
+					<div class="form-popup__btn button-two button-two_font">
+						<span><a href="#" data-popup="#form-password-one">Отправить код повторно</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20221212203514"></script>
+</body>
+
+</html>

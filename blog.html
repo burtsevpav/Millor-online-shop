@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Блог</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221212203514">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__elements common-elements">
+					<a href="index.html" class="common-elements__logo">
+						<picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="Логотип" class="common-elements__logotype" /></picture>
+					</a>
+					<div class="common-elements__items">
+						<div class="common-elements__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="index.html" class="menu__link">Главная</a>
+									</li>
+									<li class="menu__item">
+										<a href="blog.html" class="menu__link">Блог</a>
+									</li>
+									<li class="menu__item">
+										<a href="contacts.html" class="menu__link">Контакты</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="common-elements__user user-header">
+							<div class="user-header__item">
+								<a href="" class="user-header__search _icon-search"></a>
+							</div>
+							<div class="user-header__item">
+								<a href="error.html" class="user-header__cart _icon-cart"></a>
+							</div>
+							<div class="user-header__item">
+								<a href="#" data-popup="#form-registration" class="user-header__login _icon-login"></a>
+							</div>
+						</div>
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<form action="#" class="form-header">
+							<div class="form-header__items">
+								<input autocomplete="off" type="text" name="inputOne" data-error="Ошибка" placeholder="Поиск" class="form-header__input input" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<div class="page-nav">
+				<div class="page-nav__container">
+					<ul class="page-nav__list">
+						<li class="page-nav__item">
+							<a href="index.html" class="page-nav__link">Главная</a>
+						</li>
+						<li class="page-nav__item">
+							<a href="blog.html" class="page-nav__link">• Блог</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="common-nav">
+				<div class="common-nav__container">
+					<nav class="common-nav__navigation">
+						<ul class="common-nav__list">
+							<li class="common-nav__item">
+								<a href="#" data-goto=".items-nav" class="common-nav__link">Обучение</a>
+							</li>
+							<li class="common-nav__item">
+								<a href="#" data-goto=".items-news" class="common-nav__link">Новости</a>
+							</li>
+							<li class="common-nav__item">
+								<a href="#" data-goto=".questions" class="common-nav__link">Частые вопросы</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<section class="items-nav">
+				<div class="common-head">
+					<div class="common-head__container">
+						<h2 class="common-head__title title">Приготовление кофе разными способами</h2>
+					</div>
+				</div>
+				<div class="common-items">
+					<div class="common-items__container">
+						<a href="#" data-goto=".title-text-common_one" data-goto-top="10" class="item-common">
+							<h5 class="item-common__title">Турка</h5>
+							<div class="item-common__image">
+								<img src="img/blog/cezve.svg" alt="Турка" class="item-common__img" />
+							</div>
+						</a>
+						<a href="#" data-goto=".title-text-common_two" data-goto-top="10" class="item-common">
+							<h5 class="item-common__title">Френч-пресс</h5>
+							<div class="item-common__image">
+								<img src="img/blog/french-press.svg" alt="Френч-пресс" class="item-common__img" />
+							</div>
+						</a>
+						<a href="#" data-goto=".title-text-common_three" data-goto-top="10" class="item-common">
+							<h5 class="item-common__title">Мока</h5>
+							<div class="item-common__image">
+								<img src="img/blog/moka.svg" alt="Мока" class="item-common__img" />
+							</div>
+						</a>
+						<a href="#" data-goto=".title-text-common_four" data-goto-top="10" class="item-common">
+							<h5 class="item-common__title">Эспрессо</h5>
+							<div class="item-common__image">
+								<img src="img/blog/espresso.svg" alt="Эспрессо" class="item-common__img" />
+							</div>
+						</a>
+						<a href="#" data-goto=".title-text-common_five" data-goto-top="10" class="item-common">
+							<h5 class="item-common__title">Воронка</h5>
+							<div class="item-common__image">
+								<img src="img/blog/funnel.svg" alt="Воронка" class="item-common__img" />
+							</div>
+						</a>
+						<a href="#" data-goto=".title-text-common_six" data-goto-top="10" class="item-common">
+							<h5 class="item-common__title">Аэропресс</h5>
+							<div class="item-common__image">
+								<img src="img/blog/aeropress.svg" alt="Аэропресс" class="item-common__img" />
+							</div>
+						</a>
+						<a href="#" data-goto=".title-text-common_seven" data-goto-top="10" class="item-common">
+							<h5 class="item-common__title">Чашка</h5>
+							<div class="item-common__image">
+								<img src="img/blog/cup.svg" alt="Чашка" class="item-common__img" />
+							</div>
+						</a>
+						<a href="#" data-goto=".title-text-common_eight" data-goto-top="10" class="item-common">
+							<h5 class="item-common__title">Автомат</h5>
+							<div class="item-common__image">
+								<img src="img/blog/auto.svg" alt="Автомат" class="item-common__img" />
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="title-text-common title-text-common_one">
+				<div class="title-text-common__container">
+					<h2 class="title-text-common__title title">Как сварить кофе в турке:</h2>
+					<div data-showmore="items" data-showmore-media="768,max" class="title-text-common__items">
+						<div data-showmore-content="1" class="title-text-common__content">
+							<p class="title-text-common__text text">
+								Кофе в турке – это отдача от всех крупинок кофе для создания идеального напитка. Каждое приготовление кофе в турке делится на три этапа: Выбор кофе, приготовление
+								и своевременное снятие турки с плиты при поднятии пенки (кремы).
+							</p>
+							<p class="title-text-common__text text">
+								Как выбрать кофе для турки: Для турки – лучше всего подходит кофе средней обжарки. В интернет-магазине Millor почти весь кофе средней обжарки, кроме сортов для
+								фильтра и Dark Side.
+							</p>
+							<p class="title-text-common__text text">
+								Почему нужен кофе средней обжарки: Темная обжарка кофе – придаст жженый вкус кофе. Зерно не сможет раскрыть свой вкусовой профиль и во вкусе будет только
+								классическая горечь кофе, что тоже неплохо, если вы любите итальянский кофе. Светлая обжарка кофе – может придать вкусу чрезмерную кислотность, что не совсем
+								соответствует ожиданиям приготовления кофе в турке. Оптимальным вариантом является средняя обжарка кофе Millor. Зерно сможет передать свои вкусовые профили и
+								раскрыться в вашем напитке.
+							</p>
+						</div>
+						<button hidden data-showmore-button type="button" class="block__more">
+							<span>Показать еще</span>
+							<span>Скрыть</span>
+						</button>
+					</div>
+					<div class="common-picture">
+						<div class="common-picture__ibg-image">
+							<picture><source srcset="img/blog/coffee-one.webp" type="image/webp"><img src="img/blog/coffee-one.jpg" alt="Кофе" class="common-picture__ibg-pic" /></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="title-text-common title-text-common_two">
+				<div class="title-text-common__container">
+					<h2 class="title-text-common__title title">Как сварить кофе во френч-прессе:</h2>
+					<div data-showmore="items" data-showmore-media="768,max" class="title-text-common__items">
+						<div data-showmore-content="1" class="title-text-common__content">
+							<p class="title-text-common__text text">
+								Завариваем кофе в френч-прессе Френч-пресс – кухонный атрибут, который есть почти у каждого дома. Френч-пресс подходит для заваривания чая, трав и также может
+								быть использован для приготовления прекрасного кофе в домашних условиях.
+							</p>
+							<p class="title-text-common__text text">
+								Для приготовления кофе с помощью френч-пресса нам потребуется: свежий кофе марки Millor, жерновая кофемолка (чтобы сделать помол) и фильтрованная питьевая вода.
+								Помол для приготовления кофе должен быть крупным (размером с сахарный песок или крупную морскую соль).
+							</p>
+							<p class="title-text-common__text text">
+								Количество молотого кофе колеблется в зависимости от ваших вкусов и размеров френч-пресса. Выработанные нормы для приготовления кофе 60 гр. зерна на 1 литр воды.
+								То есть на стандартный размер френч-пресса 350 мл. вам понадобится 21 грамм кофе. Для измерения советуем пользоваться либо мерной ложкой или весами.
+							</p>
+						</div>
+						<button hidden data-showmore-button type="button" class="block__more">
+							<span>Показать еще</span>
+							<span>Скрыть</span>
+						</button>
+					</div>
+					<div class="common-picture">
+						<div class="common-picture__ibg-image">
+							<picture><source srcset="img/blog/coffee-two.webp" type="image/webp"><img src="img/blog/coffee-two.jpg" alt="Кофе" class="common-picture__ibg-pic" /></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="title-text-common title-text-common_three">
+				<div class="title-text-common__container">
+					<h2 class="title-text-common__title title">Как сварить кофе Мока:</h2>
+					<div data-showmore="items" data-showmore-media="768,max" class="title-text-common__items">
+						<div data-showmore-content="1" class="title-text-common__content">
+							<p class="title-text-common__text text">
+								Подогрейте воду в чайнике, не доводя до кипения. Если заливать в основание холодную воду, то время приготовления сильно увеличивается, и такой кофе из гейзерной
+								кофеварки может начать горчить, а также приобрести нежелательный металлический привкус.
+							</p>
+							<p class="title-text-common__text text">
+								Раскрутите моку и залейте горячую воду в основание до клапана безопасности, не выше. Клапан предназначен для стравливания давления, если вода не может пройти
+								через сетчатый фильтр с кофе. Такое происходит, если, например, кофе смолот слишком мелко. Раскрутите моку и залейте горячую воду в основание до клапана
+								безопасности, не выше.
+							</p>
+							<p class="title-text-common__text text">
+								Клапан предназначен для стравливания давления, если вода не может пройти через сетчатый фильтр с кофе. Такое происходит, если, например, кофе смолот слишком
+								мелко. Засыпьте кофе в фильтр до краев и установите на моку. Аккуратно прикрутите основание к верхней части. Поставьте моку на огонь и закройте крышку.
+							</p>
+						</div>
+						<button hidden data-showmore-button type="button" class="block__more">
+							<span>Показать еще</span>
+							<span>Скрыть</span>
+						</button>
+					</div>
+					<div class="common-picture">
+						<div class="common-picture__ibg-image">
+							<picture><source srcset="img/blog/coffee-three.webp" type="image/webp"><img src="img/blog/coffee-three.jpg" alt="Кофе" class="common-picture__ibg-pic" /></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="title-text-common title-text-common_four">
+				<div class="title-text-common__container">
+					<h2 class="title-text-common__title title">Эспрессо-машина</h2>
+					<div data-showmore="items" data-showmore-media="768,max" class="title-text-common__items">
+						<div data-showmore-content="1" class="title-text-common__content">
+							<p class="title-text-common__text text">Все зависит от напитка который вы хотите приготовить.</p>
+							<p class="title-text-common__text text">
+								Закладка кофе для эспрессо настраивается под каждый сорт кофе отдельно. Из 18 грамм кофе приготовили 30 грамм эспрессо за время 28 сек.
+							</p>
+						</div>
+						<button hidden data-showmore-button type="button" class="block__more">
+							<span>Показать еще</span>
+							<span>Скрыть</span>
+						</button>
+					</div>
+					<div class="common-picture">
+						<div class="common-picture__ibg-image">
+							<picture><source srcset="img/blog/coffee-one.webp" type="image/webp"><img src="img/blog/coffee-one.jpg" alt="Кофе" class="common-picture__ibg-pic" /></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="title-text-common title-text-common_five">
+				<div class="title-text-common__container">
+					<h2 class="title-text-common__title title">Воронка</h2>
+					<div data-showmore="items" data-showmore-media="768,max" class="title-text-common__items">
+						<div data-showmore-content="1" class="title-text-common__content">
+							<p class="title-text-common__text text">
+								Приготовления кофе в воронке занимает 3-5 минут. Вам понадобится: воронка, фильтр, кофемолка, 27 г кофе и вода температурой 92-95°С.
+							</p>
+							<p class="title-text-common__text text">
+								Намалываем необходимое количество кофе. Помол должен быть крупный, больше сахара. Частицы размером с морскую соль. Если у вас нет весов — в столовой ложке «с
+								горкой» примерно 9 г кофе. Для приготовления 500 мл кофе в воронке понадобятся 3 столовые ложки молотого кофе «с горкой».
+							</p>
+							<p class="title-text-common__text text">
+								Ставим воронку на сервер или любую другую емкость, которая подойдет по объему и диаметру горлышка. Устанавливаем фильтр в воронку. Наливаем немного горячей воды,
+								чтобы смочить фильтр и прогреть воронку с сервером – так заваривание будет «ровнее», а кофе не начнет мгновенно остывать, соприкоснувшись с холодными
+								поверхностями. Сливаем эту воду.
+							</p>
+						</div>
+						<button hidden data-showmore-button type="button" class="block__more">
+							<span>Показать еще</span>
+							<span>Скрыть</span>
+						</button>
+					</div>
+					<div class="common-picture">
+						<div class="common-picture__ibg-image">
+							<picture><source srcset="img/blog/coffee-two.webp" type="image/webp"><img src="img/blog/coffee-two.jpg" alt="Кофе" class="common-picture__ibg-pic" /></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="title-text-common title-text-common_six">
+				<div class="title-text-common__container">
+					<h2 class="title-text-common__title title">Аэропресс</h2>
+					<div data-showmore="items" data-showmore-media="768,max" class="title-text-common__items">
+						<div data-showmore-content="1" class="title-text-common__content">
+							<p class="title-text-common__text text">Помол для аэропресса — средний. Примерно как для пуровера. Оптимальная закладка кофе для аэропресса — 18 грамм.</p>
+							<p class="title-text-common__text text">
+								В отличие от других методов приготовления, в аэропрессе используют больше кофе по отношению к воде: около 70 грамм на 1 литр. Но это не значит, что нужно всегда
+								использовать именно столько кофе. Мы рекомендуем относиться к этому, как к ориентиру и регулировать пропорции в зависимости от вкуса.
+							</p>
+							<p class="title-text-common__text text">
+								Оптимальная температура для приготовления кофе в аэропрессе — 90°С. Чтобы получить такую температуру, нужно вскипятить воду, а затем остудить её в течение
+								полутора минут с открытой крышкой.
+							</p>
+						</div>
+						<button hidden data-showmore-button type="button" class="block__more">
+							<span>Показать еще</span>
+							<span>Скрыть</span>
+						</button>
+					</div>
+					<div class="common-picture">
+						<div class="common-picture__ibg-image">
+							<picture><source srcset="img/blog/coffee-three.webp" type="image/webp"><img src="img/blog/coffee-three.jpg" alt="Кофе" class="common-picture__ibg-pic" /></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="title-text-common title-text-common_seven">
+				<div class="title-text-common__container">
+					<h2 class="title-text-common__title title">Чашка</h2>
+					<div data-showmore="items" data-showmore-media="768,max" class="title-text-common__items">
+						<div data-showmore-content="1" class="title-text-common__content">
+							<p class="title-text-common__text text">
+								Заваривать кофе в кружке – это один из самых удобных и самых комфортабельных способов заварки кофе. Кружка – всегда под рукой, если найти кофемолку и кофе, то
+								можно приготовить напиток идеального вкуса и пропорций.
+							</p>
+							<p class="title-text-common__text text">Для приготовления напитка нам понадобятся: свежеобжаренный кофе из интернет магазина Millor, кофемолка, чайник и чашка.</p>
+							<p class="title-text-common__text text">
+								Самое главное правило приготовления любого напитка – следовать инструкции. Для заваривания кофе она проста: засыпали кофе, залили, перемешали, дали настояться,
+								повторно перемешали и наслаждаемся напитком.
+							</p>
+						</div>
+						<button hidden data-showmore-button type="button" class="block__more">
+							<span>Показать еще</span>
+							<span>Скрыть</span>
+						</button>
+					</div>
+					<div class="common-picture">
+						<div class="common-picture__ibg-image">
+							<picture><source srcset="img/blog/coffee-one.webp" type="image/webp"><img src="img/blog/coffee-one.jpg" alt="Кофе" class="common-picture__ibg-pic" /></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="title-text-common title-text-common_eight">
+				<div class="title-text-common__container">
+					<h2 class="title-text-common__title title">Автомат</h2>
+					<div data-showmore="items" data-showmore-media="768,max" class="title-text-common__items">
+						<div data-showmore-content="1" class="title-text-common__content">
+							<p class="title-text-common__text text">Приготовление кофе в автоматической кофемашине зависит от кофемашины и ее настроек. Нужно выбрать оптимальный помол.</p>
+							<p class="title-text-common__text text">
+								В отличие от других методов приготовления, в аэропрессе используют больше кофе по отношению к воде: около 70 грамм на 1 литр. Но это не значит, что нужно всегда
+								использовать именно столько кофе. Мы рекомендуем относиться к этому, как к ориентиру и регулировать пропорции в зависимости от вкуса.
+							</p>
+							<p class="title-text-common__text text">
+								Оптимальная температура для приготовления кофе в аэропрессе — 90°С. Чтобы получить такую температуру, нужно вскипятить воду, а затем остудить её в течение
+								полутора минут с открытой крышкой.
+							</p>
+						</div>
+						<button hidden data-showmore-button type="button" class="block__more">
+							<span>Показать еще</span>
+							<span>Скрыть</span>
+						</button>
+					</div>
+					<div class="common-picture">
+						<div class="common-picture__ibg-image">
+							<picture><source srcset="img/blog/coffee-three.webp" type="image/webp"><img src="img/blog/coffee-three.jpg" alt="Кофе" class="common-picture__ibg-pic" /></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="items-news">
+				<div class="items-news__container">
+					<div class="items-news__head">
+						<h2 class="items-news__title title">Новости:</h2>
+						<div class="common-nav">
+							<nav class="common-nav__navigation">
+								<ul class="common-nav__list">
+									<li class="common-nav__item">
+										<a href="#" data-goto=".items-news__item_one" class="common-nav__link">Тег №1</a>
+									</li>
+									<li class="common-nav__item">
+										<a href="#" data-goto=".items-news__item_two" class="common-nav__link">Тег №2</a>
+									</li>
+									<li class="common-nav__item">
+										<a href="#" data-goto=".items-news__item_three" class="common-nav__link">Тег №3</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div data-showmore="items" class="items-news__body">
+						<div data-showmore-content="3" class="items-news__content">
+							<article class="items-news__item items-news__item_one">
+								<div class="news-item">
+									<div class="news-item__picture">
+										<picture><source srcset="img/main/news-cards/lion.webp" type="image/webp"><img src="img/main/news-cards/lion.jpg" alt="Кофе" class="news-item__img" /></picture>
+									</div>
+									<div class="news-item__content">
+										<h5 class="news-item__title">Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h5>
+										<div class="news-item__texts">
+											<p class="news-item__text">
+												Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.
+											</p>
+											<p class="news-item__text">Но наш интерес вызван не столько природными красотами, сколько кофе...</p>
+										</div>
+										<div class="news-item__items">
+											<p class="news-item__subtitle">Автор статьи: Иван Иванов</p>
+											<a href="error.html" class="news-item__more">Подробнее →</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="items-news__item items-news__item_two">
+								<div class="news-item">
+									<div class="news-item__picture">
+										<picture><source srcset="img/main/news-cards/lion.webp" type="image/webp"><img src="img/main/news-cards/lion.jpg" alt="Кофе" class="news-item__img" /></picture>
+									</div>
+									<div class="news-item__content">
+										<h5 class="news-item__title">Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h5>
+										<div class="news-item__texts">
+											<p class="news-item__text">
+												Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.
+											</p>
+											<p class="news-item__text">Но наш интерес вызван не столько природными красотами, сколько кофе...</p>
+										</div>
+										<div class="news-item__items">
+											<p class="news-item__subtitle">Автор статьи: Иван Иванов</p>
+											<a href="error.html" class="news-item__more">Подробнее →</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="items-news__item items-news__item_three">
+								<div class="news-item">
+									<div class="news-item__picture">
+										<picture><source srcset="img/main/news-cards/lion.webp" type="image/webp"><img src="img/main/news-cards/lion.jpg" alt="Кофе" class="news-item__img" /></picture>
+									</div>
+									<div class="news-item__content">
+										<h5 class="news-item__title">Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h5>
+										<div class="news-item__texts">
+											<p class="news-item__text">
+												Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.
+											</p>
+											<p class="news-item__text">Но наш интерес вызван не столько природными красотами, сколько кофе...</p>
+										</div>
+										<div class="news-item__items">
+											<p class="news-item__subtitle">Автор статьи: Иван Иванов</p>
+											<a href="error.html" class="news-item__more">Подробнее →</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="items-news__item">
+								<div class="news-item">
+									<div class="news-item__picture">
+										<picture><source srcset="img/main/news-cards/lion.webp" type="image/webp"><img src="img/main/news-cards/lion.jpg" alt="Кофе" class="news-item__img" /></picture>
+									</div>
+									<div class="news-item__content">
+										<h5 class="news-item__title">Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h5>
+										<div class="news-item__texts">
+											<p class="news-item__text">
+												Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.
+											</p>
+											<p class="news-item__text">Но наш интерес вызван не столько природными красотами, сколько кофе...</p>
+										</div>
+										<div class="news-item__items">
+											<p class="news-item__subtitle">Автор статьи: Иван Иванов</p>
+											<a href="error.html" class="news-item__more">Подробнее →</a>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+						<button hidden data-showmore-button type="button" class="block__more block__more_wide block__more_color">
+							<span>Показать еще</span>
+							<span>Скрыть</span>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="questions">
+				<div class="questions__head">
+					<div class="questions__container">
+						<h2 class="questions__title title">Частые вопросы:</h2>
+					</div>
+				</div>
+				<div class="questions__body">
+					<div class="questions__container">
+						<div class="questions__picture">
+							<div class="questions__ibg-image">
+								<picture><source srcset="img/main/points-picture/coffee-grain.webp" type="image/webp"><img src="img/main/points-picture/coffee-grain.png" alt="Кофе" class="questions__ibg-pic" /></picture>
+							</div>
+						</div>
+						<div class="questions__content">
+							<div data-spollers class="spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title">
+										<span class="spollers__text">Чем вы отличаетесь от конкурентов? Почему мне стоит выбрать вас?</span>
+										<span class="spollers__decor"></span>
+									</button>
+									<div class="spollers__body">
+										Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия. Таким образом укрепление и
+										развитие структуры способствует подготовки и реализации направлений прогрессивного развития
+									</div>
+								</div>
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title">
+										<span class="spollers__text">Чем вы отличаетесь от конкурентов? Почему мне стоит выбрать вас?</span>
+										<span class="spollers__decor"></span>
+									</button>
+									<div class="spollers__body">
+										Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия. Таким образом укрепление и
+										развитие структуры способствует подготовки и реализации направлений прогрессивного развития
+									</div>
+								</div>
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title">
+										<span class="spollers__text">Чем вы отличаетесь от конкурентов? Почему мне стоит выбрать вас?</span>
+										<span class="spollers__decor"></span>
+									</button>
+									<div class="spollers__body">
+										Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия. Таким образом укрепление и
+										развитие структуры способствует подготовки и реализации направлений прогрессивного развития
+									</div>
+								</div>
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title">
+										<span class="spollers__text">Чем вы отличаетесь от конкурентов? Почему мне стоит выбрать вас?</span>
+										<span class="spollers__decor"></span>
+									</button>
+									<div class="spollers__body">
+										Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия. Таким образом укрепление и
+										развитие структуры способствует подготовки и реализации направлений прогрессивного развития
+									</div>
+								</div>
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title">
+										<span class="spollers__text">Чем вы отличаетесь от конкурентов? Почему мне стоит выбрать вас?</span>
+										<span class="spollers__decor"></span>
+									</button>
+									<div class="spollers__body">
+										Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия. Таким образом укрепление и
+										развитие структуры способствует подготовки и реализации направлений прогрессивного развития
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="subscribe subscribe_bg-two">
+				<div class="subscribe__container">
+					<div class="subscribe__body">
+						<h2 class="subscribe__title title">Подписка на новости и рассылку</h2>
+						<p class="subscribe__subtitle">Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных предложений.</p>
+						<form data-popup-message="#form-message" data-dev method="post" action="#" class="subscribe__form form-subscribe">
+							<input data-validate data-required autocomplete="off" type="email" name="inputTwo" data-error="Введите E-mail!" placeholder="Ваш email" class="form-subscribe__input input" />
+							<button type="submit" class="form-subscribe__button">Подписаться</button>
+						</form>
+						<div class="subscribe__text">
+							Нажимая на кнопку “Подписаться”, вы принимаете правила <span><a href="error.html">пользовательского соглашения</a></span>
+						</div>
+					</div>
+					<div data-da=".subscribe__body,660,2" class="subscribe__picture">
+						<div class="subscribe__ibg-image">
+							<picture><source srcset="img/main/hero/grain.webp" type="image/webp"><img src="img/main/hero/grain.png" alt="Кофе" class="subscribe__ibg-pic" /></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__elements common-elements">
+					<a href="" class="common-elements__logo">
+						<picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="Логотип" class="common-elements__logotype" /></picture>
+					</a>
+					<div class="common-elements__items">
+						<div class="common-elements__menu menu-footer">
+							<nav class="menu-footer__content">
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item">
+										<a href="index.html" class="menu-footer__link">Главная</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="blog.html" class="menu-footer__link">Блог</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="contacts.html" class="menu-footer__link">Контакты</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<div id="form-message" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup__content_form">
+				<div class="popup__text popup__text_form">Спасибо за подписку!</div>
+			</div>
+		</div>
+	</div>
+	<!-- Popup для формы регистрации-->
+	<div id="form-registration" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__left left-popup">
+					<button data-close type="button" class="right-popup__close right-popup__close_display-one"></button>
+					<div class="left-popup__picture">
+						<div class="left-popup__ibg-image">
+							<picture><source srcset="img/main/hero/grain.webp" type="image/webp"><img src="img/main/hero/grain.png" alt="Кофе" class="left-popup__ibg-pic" /></picture>
+						</div>
+					</div>
+					<div class="left-popup__body">
+						<h4 class="left-popup__title">Добро пожаловать!</h4>
+						<p class="left-popup__subtitle">Уже есть аккаунт?</p>
+					</div>
+					<button type="button" data-popup="#form-entrance" class="left-popup__button">Войти</button>
+				</div>
+				<div class="popup__right right-popup">
+					<button data-close type="button" class="right-popup__close right-popup__close_display-two"></button>
+					<div class="right-popup__logo">
+						<img src="img/popup/logo.svg" alt="Логотип" class="right-popup__logotype" />
+					</div>
+					<h3 class="right-popup__title">Регистрация</h3>
+					<p class="right-popup__text">Зарегистрируйтесь на сайте, чтобы первым получать скидки и узнавать акционные предложения!</p>
+					<form class="right-popup__form form-popup">
+						<div class="form-popup__item">
+							<input data-validate data-required autocomplete="off" type="text" name="nameOne" data-error="Введите имя!" placeholder="Имя и фамилия" class="form-popup__input input" />
+						</div>
+						<div class="form-popup__item">
+							<input data-validate data-required autocomplete="off" type="email" name="emailOne" data-error="Введите email!" placeholder="Email" class="form-popup__input input" />
+						</div>
+						<div class="form-popup__item">
+							<input data-validate data-required autocomplete="off" type="tel" name="telOne" data-error="Введите телефон!" placeholder="Телефон" class="form-popup__input input" />
+						</div>
+						<div class="form-popup__item">
+							<input data-validate data-required autocomplete="off" type="password" name="passwordlOne" data-error="Введите пароль!" placeholder="Придумайте пароль" class="form-popup__input input" />
+						</div>
+						<button type="submit" class="form-popup__button">Зарегистрироваться</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Popup для формы входа-->
+	<div id="form-entrance" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__left left-popup">
+					<button data-close type="button" class="right-popup__close right-popup__close_display-one"></button>
+					<div class="left-popup__picture">
+						<div class="left-popup__ibg-image">
+							<picture><source srcset="img/main/hero/grain.webp" type="image/webp"><img src="img/main/hero/grain.png" alt="Кофе" class="left-popup__ibg-pic" /></picture>
+						</div>
+					</div>
+					<div class="left-popup__body">
+						<h4 class="left-popup__title">Регистрация</h4>
+						<p class="left-popup__subtitle">Получайте скидки первым!</p>
+					</div>
+					<button type="button" data-popup="#form-registration" class="left-popup__button">Зарегистрироваться</button>
+				</div>
+				<div class="popup__right right-popup">
+					<button data-close type="button" class="right-popup__close right-popup__close_display-two"></button>
+					<div class="right-popup__logo">
+						<img src="img/popup/logo.svg" alt="Логотип" class="right-popup__logotype" />
+					</div>
+					<h3 class="right-popup__title">Войти в личный кабинет</h3>
+					<form action="#" class="right-popup__form form-popup">
+						<div class="form-popup__item">
+							<input data-validate data-required autocomplete="off" type="email" name="emailOne" data-error="Введите email!" placeholder="Email" class="form-popup__input input" />
+						</div>
+						<div class="form-popup__item">
+							<input data-validate data-required autocomplete="off" type="password" name="passwordlOne" data-error="Введите пароль!" placeholder="Придумайте пароль" class="form-popup__input input" />
+						</div>
+						<button type="submit" class="form-popup__button">Войти</button>
+					</form>
+					<div class="form-popup__btn button-two button-two_font">
+						<span><a href="#" data-popup="#form-password-one">Забыли пароль?</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Popup для формы забыл пароль, шаг 1-->
+	<div id="form-password-one" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__left left-popup">
+					<button data-close type="button" class="right-popup__close right-popup__close_display-one"></button>
+					<div class="left-popup__picture">
+						<div class="left-popup__ibg-image">
+							<picture><source srcset="img/main/hero/grain.webp" type="image/webp"><img src="img/main/hero/grain.png" alt="Кофе" class="left-popup__ibg-pic" /></picture>
+						</div>
+					</div>
+					<div class="left-popup__body">
+						<h4 class="left-popup__title">Регистрация</h4>
+						<p class="left-popup__subtitle">Получайте скидки первым!</p>
+					</div>
+					<button type="button" data-popup="#form-registration" class="left-popup__button">Зарегистрироваться</button>
+				</div>
+				<div class="popup__right right-popup">
+					<button data-close type="button" class="right-popup__close right-popup__close_display-two"></button>
+					<div class="right-popup__logo">
+						<img src="img/popup/logo.svg" alt="Логотип" class="right-popup__logotype" />
+					</div>
+					<h3 class="right-popup__title">Забыли пароль?</h3>
+					<p class="right-popup__text">Введите вашу почту и мы пришлем вам проверочный код на почту</p>
+					<form action="#" class="right-popup__form form-popup">
+						<div class="form-popup__item">
+							<input data-validate data-required autocomplete="off" type="email" name="emailOne" data-error="Введите email!" placeholder="Email" class="form-popup__input input" />
+						</div>
+						<button type="submit" data-popup="#form-password-two" class="form-popup__button">Получить код</button>
+					</form>
+					<div class="form-popup__btn button-two button-two_font">
+						<span><a href="#" data-popup="#form-entrance">На страницу входа</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Popup для формы забыл пароль, шаг 2-->
+	<div id="form-password-two" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__left left-popup">
+					<button data-close type="button" class="right-popup__close right-popup__close_display-one"></button>
+					<div class="left-popup__picture">
+						<div class="left-popup__ibg-image">
+							<picture><source srcset="img/main/hero/grain.webp" type="image/webp"><img src="img/main/hero/grain.png" alt="Кофе" class="left-popup__ibg-pic" /></picture>
+						</div>
+					</div>
+					<div class="left-popup__body">
+						<h4 class="left-popup__title">Регистрация</h4>
+						<p class="left-popup__subtitle">Получайте скидки первым!</p>
+					</div>
+					<button type="button" data-popup="#form-registration" class="left-popup__button">Зарегистрироваться</button>
+				</div>
+				<div class="popup__right right-popup">
+					<button data-close type="button" class="right-popup__close right-popup__close_display-two"></button>
+					<div class="right-popup__logo">
+						<img src="img/popup/logo.svg" alt="Логотип" class="right-popup__logotype" />
+					</div>
+					<h3 class="right-popup__title">Забыли пароль?</h3>
+					<p class="right-popup__text">Мы выслали вам на почту проверочный код. Введите его и ниже и придумайте новый пароль</p>
+					<form action="#" class="right-popup__form form-popup">
+						<div class="form-popup__item">
+							<input data-validate data-required autocomplete="off" type="text" name="codeOne" data-error="Введите код!" placeholder="Введите код" class="form-popup__input input" />
+						</div>
+						<div class="form-popup__item">
+							<input data-validate data-required autocomplete="off" type="password" name="passwordlOne" data-error="Введите новый пароль!" placeholder="Введите новый пароль" class="form-popup__input input" />
+						</div>
+						<button type="submit" class="form-popup__button">Обновить пароль</button>
+					</form>
+					<div class="form-popup__btn button-two button-two_font">
+						<span><a href="#" data-popup="#form-password-one">Отправить код повторно</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20221212203514"></script>
+</body>
+
+</html>
