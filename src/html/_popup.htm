@@ -200,3 +200,49 @@
     </div>
   </div>
 </div>
+<!-- Popup для формы оставить заявку-->
+<div id="form-submit" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__left left-popup">
+        <button data-close type="button" class="right-popup__close right-popup__close_display-one"></button>
+        <div class="left-popup__picture">
+          <div class="left-popup__ibg-image">
+            <img src="../img/main/hero/grain.png" alt="Кофе" class="left-popup__ibg-pic" />
+          </div>
+        </div>
+        <div class="left-popup__body">
+          <h4 class="left-popup__title">Добро пожаловать!</h4>
+          <p class="left-popup__subtitle">Уже есть аккаунт?</p>
+        </div>
+        <button type="button" data-popup="#form-entrance" class="left-popup__button">Войти</button>
+      </div>
+      <div class="popup__right right-popup">
+        <button data-close type="button" class="right-popup__close right-popup__close_display-two"></button>
+        <div class="right-popup__logo">
+          <img src="../img/popup/logo.svg" alt="Логотип" class="right-popup__logotype" />
+        </div>
+        <h3 class="right-popup__title">Оставить заявку</h3>
+        <p class="right-popup__text">Оставьте свои Имя и Email и мы свяжемся с Вами!</p>
+        <form data-dev data-popup-message="#form-message" action="#" class="right-popup__form form-popup">
+          <div class="form-popup__item">
+            <input
+              data-validate
+              data-required
+              autocomplete="off"
+              type="text"
+              name="nameOne"
+              data-error="Введите имя!"
+              placeholder="Имя и фамилия"
+              class="form-popup__input input"
+            />
+          </div>
+          <div class="form-popup__item">
+            <input data-validate data-required autocomplete="off" type="email" name="emailOne" data-error="Введите email!" placeholder="Email" class="form-popup__input input" />
+          </div>
+          <button type="submit" class="form-popup__button">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
